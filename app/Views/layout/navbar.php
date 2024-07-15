@@ -1,17 +1,12 @@
 <div class="wrapper">
-
     <nav class="main-header navbar navbar-custom navbar-expand-lg navbar-white navbar-light bg-body-tertiary">
         <div class="container-fluid px-0">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#">
-                        <i class="far fa-comments"></i>
-                        <span class="badge badge-danger navbar-badge">3</span>
-                    </a>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                         <a href="#" class="dropdown-item">
-                            <div class="profile">
-                                <img src="<?= base_url() ?>img/fico.png" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                            <div class="profile profile-md profile-indicators profile-online">
+                                <img src="<?= base_url() ?>img/fico.png" alt="User Avatar" class="img-size-50 mr-2 rounded-circle">
                                 <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Brad Diesel
@@ -61,8 +56,8 @@
 
                 <!-- nyoba -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#">
-                        <div class="user-panel">
+                    <a class="nav-link rounded-circle" data-toggle="dropdown" href="#">
+                        <div class="user user-panel user-indicator user-online">
                             <div class="image">
                                 <img src="<?= base_url() ?>img/fico.png" class="img-circle" alt="User Image">
                             </div>
@@ -121,7 +116,7 @@
     </nav>
 
 
-    <aside class="main-sidebar sidebar-tertiary elevation-1">
+    <aside class="main-sidebar sidebar-tertiary elevation-1" style="position: fixed;">
 
         <a href="index3.html" class="brand-link">
             <span class="brand-text fw-semibold ml-4 text-dark">File Manager</span>
@@ -195,12 +190,6 @@
                                 <a href="/pages/activity" class="nav-link">
                                     <i class="fas fa-solid fa-minus"></i>
                                     <p>Activity</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/pages/profsettings" class="nav-link">
-                                    <i class="fas fa-solid fa-minus"></i>
-                                    <p>Settings</p>
                                 </a>
                             </li>
                         </ul>

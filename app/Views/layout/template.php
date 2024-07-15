@@ -15,9 +15,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<?= $this->include('layout/navbar'); ?>
+<body class="layout-fixed layout-navbar-fixed">
 
-<?= $this->renderSection('content'); ?>
+    <?= $this->include('layout/navbar'); ?>
+
+    <?= $this->renderSection('content'); ?>
+</body>
 
 <script src="<?= base_url('AdminLTE') ?>/plugins/jquery/jquery.min.js"></script>
 

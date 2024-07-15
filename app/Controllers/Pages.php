@@ -32,12 +32,12 @@ class Pages extends BaseController
         ];
         return view('pages/files', $data);
     }
-    public function profsettings()
+    public function activity()
     {
         $data = [
-            'title' => 'Profile Settings',
+            'title' => 'Activity',
         ];
-        return view('pages/profsettings', $data);
+        return view('pages/activity', $data);
     }
 
     public function settings()
