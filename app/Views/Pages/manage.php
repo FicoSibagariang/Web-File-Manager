@@ -20,10 +20,10 @@
                     <div class="position-relative">
                         <div class="card">
                             <div class="card-body" style="height: max-content;">
-                                <nav class="navbar-mail ">
+                                <nav class="navbar-mail">
                                     <ul class="navbar-nav flex-column w-100">
                                         <li class="d-grid mb-4 dropdown">
-                                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <button class="btn btn-bd-primary mx-auto gap-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Create New
                                             </button>
                                             <ul class="dropdown-menu w-100">
@@ -34,48 +34,46 @@
                                             </ul>
 
                                         </li>
-
-
                                         <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#!">
+                                            <a class="nav-link text-dark" aria-current="page" href="#!">
                                                 <i class="nav-icon far fa-folder"></i>
-                                                <p>My Files</p>
+                                                My Files
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link " aria-current="page" href="#!">
+                                            <a class="nav-link text-dark" aria-current="page" href="#!">
                                                 <i class="nav-icon far fa-folder"></i>
-                                                <p>Google Drive</p>
+                                                Google Drive
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link " aria-current="page" href="#!">
+                                            <a class="nav-link text-dark" aria-current="page" href="#!">
                                                 <i class="nav-icon far fa-folder"></i>
-                                                <p>Dropbox</p>
+                                                Dropbox
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link " aria-current="page" href="#!">
+                                            <a class="nav-link text-dark" aria-current="page" href="#!">
                                                 <i class="nav-icon far fa-folder"></i>
-                                                <p>Shared with me</p>
+                                                Shared with me
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link " aria-current="page" href="#!">
+                                            <a class="nav-link text-dark" aria-current="page" href="#!">
                                                 <i class="nav-icon far fa-folder"></i>
-                                                <p>Recent</p>
+                                                Recent
                                             </a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a class="nav-link " aria-current="page" href="#!">
+                                            <a class="nav-link text-dark" aria-current="page" href="#!">
                                                 <i class="nav-icon far fa-folder"></i> Starred
 
                                             </a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a class="nav-link " aria-current="page" href="#!">
+                                            <a class="nav-link text-dark" aria-current="page" href="#!">
                                                 <i class=" nav-icon far fa-folder"></i> Deleted Files
                                             </a>
                                         </li>
@@ -94,7 +92,6 @@
                                 </nav>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-lg-9">
@@ -120,9 +117,9 @@
                                 <div class="card-body">
                                     <a href="">
                                         <div class="d-flex align-items-center">
-                                            <i class="nav-icon far fa-folder" style="font-size: 25px;"></i>
+                                            <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
                                             <div class="ml-2">
-                                                <span class="mb-0" style="font-size: 20px;">Figma Design</span>
+                                                <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
                                             </div>
                                         </div>
                                     </a>
@@ -134,9 +131,9 @@
                                 <div class="card-body">
                                     <a href="">
                                         <div class="d-flex align-items-center">
-                                            <i class="nav-icon far fa-folder" style="font-size: 25px;"></i>
+                                            <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
                                             <div class="ml-2">
-                                                <span class="mb-0" style="font-size: 20px;">Figma Design</span>
+                                                <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
                                             </div>
                                         </div>
                                     </a>
@@ -148,9 +145,9 @@
                                 <div class="card-body">
                                     <a href="">
                                         <div class="d-flex align-items-center">
-                                            <i class="nav-icon far fa-folder" style="font-size: 25px;"></i>
+                                            <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
                                             <div class="ml-2">
-                                                <span class="mb-0" style="font-size: 20px;">Figma Design</span>
+                                                <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
                                             </div>
                                         </div>
                                     </a>
@@ -162,9 +159,9 @@
                                 <div class="card-body">
                                     <a href="">
                                         <div class="d-flex align-items-center">
-                                            <i class="nav-icon far fa-folder" style="font-size: 25px;"></i>
+                                            <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
                                             <div class="ml-2">
-                                                <span class="mb-0" style="font-size: 20px;">Figma Design</span>
+                                                <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
                                             </div>
                                         </div>
                                     </a>
@@ -176,9 +173,9 @@
                                 <div class="card-body">
                                     <a href="">
                                         <div class="d-flex align-items-center">
-                                            <i class="nav-icon far fa-folder" style="font-size: 25px;"></i>
+                                            <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
                                             <div class="ml-2">
-                                                <span class="mb-0" style="font-size: 20px;">Figma Design</span>
+                                                <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
                                             </div>
                                         </div>
                                     </a>
@@ -190,9 +187,9 @@
                                 <div class="card-body">
                                     <a href="">
                                         <div class="d-flex align-items-center">
-                                            <i class="nav-icon far fa-folder" style="font-size: 25px;"></i>
+                                            <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
                                             <div class="ml-2">
-                                                <span class="mb-0" style="font-size: 20px;">Figma Design</span>
+                                                <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
                                             </div>
                                         </div>
                                     </a>
