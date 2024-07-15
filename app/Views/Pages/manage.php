@@ -23,7 +23,7 @@
                                 <nav class="navbar-mail">
                                     <ul class="navbar-nav flex-column w-100">
                                         <li class="d-grid mb-4 dropdown">
-                                            <button class="btn btn-bd-primary mx-auto gap-2 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <button class="btn btn-bd-primary mx-auto dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 Create New
                                             </button>
                                             <ul class="dropdown-menu w-100">
@@ -35,8 +35,8 @@
 
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-dark" aria-current="page" href="#!">
-                                                <i class="nav-icon far fa-folder"></i>
+                                            <a class="nav-link text-dark" aria-current="page" href="#">
+                                                <i class="nav-icon icon-link-hover far fa-folder"></i>
                                                 My Files
                                             </a>
                                         </li>
@@ -77,6 +77,7 @@
                                                 <i class=" nav-icon far fa-folder"></i> Deleted Files
                                             </a>
                                         </li>
+                                        <br><br><br><br><br><br><br><br><br><br>
                                         <li class="nav-item">
                                             <span class="badge badge-secondary-soft">Free</span>
                                             <div class=" mb-3">
@@ -99,7 +100,7 @@
                         <form action="#">
                             <div class="input-group ">
                                 <span class="input-group-append" style="width: 200px; position:relative">
-                                    <input class="form-control rounded-3" type="search" value="" id="searchInput" placeholder="Search" >
+                                    <input class="form-control rounded-3" type="search" value="" id="searchInput" placeholder="Search">
                                     <button class="btn  ms-n10 rounded-0 rounded-end" type="button" style="position: absolute; right:0;">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search text-dark">
                                             <circle cx="11" cy="11" r="8"></circle>
@@ -110,89 +111,361 @@
                             </div>
                         </form>
                     </div>
-                    <div class="row">
 
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <a href="">
-                                        <div class="d-flex align-items-center">
-                                            <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
-                                            <div class="ml-2">
-                                                <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
+                    <div class="mt-5 mb-6">
+                        <h5 class="mb-5">Quick Access</h5>
+                        <div class="row ">
+                            <div class="col-lg-4">
+                                <div class="card" >
+                                    <div class="card-body">
+                                        <a href="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
+                                                <div class="ml-2">
+                                                    <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <a href="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
+                                                <div class="ml-2">
+                                                    <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <a href="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
+                                                <div class="ml-2">
+                                                    <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <a href="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
+                                                <div class="ml-2">
+                                                    <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <a href="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
+                                                <div class="ml-2">
+                                                    <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <a href="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
+                                                <div class="ml-2">
+                                                    <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <a href="">
-                                        <div class="d-flex align-items-center">
-                                            <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
-                                            <div class="ml-2">
-                                                <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
+                    </div>
+                    <div class="row">
+                        <h5 class="mb-5 mt-5">Folder</h5>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <a href="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
+                                                <div class="ml-2">
+                                                    <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <a href="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
+                                                <div class="ml-2">
+                                                    <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <a href="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
+                                                <div class="ml-2">
+                                                    <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <a href="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
+                                                <div class="ml-2">
+                                                    <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <a href="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
+                                                <div class="ml-2">
+                                                    <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <a href="">
+                                            <div class="d-flex align-items-center">
+                                                <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
+                                                <div class="ml-2">
+                                                    <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <a href="">
-                                        <div class="d-flex align-items-center">
-                                            <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
-                                            <div class="ml-2">
-                                                <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
-                                            </div>
-                                        </div>
-                                    </a>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h4 class="mb-0">Recent Files</h4>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card">
                                 <div class="card-body">
-                                    <a href="">
-                                        <div class="d-flex align-items-center">
-                                            <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
-                                            <div class="ml-2">
-                                                <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <a href="">
-                                        <div class="d-flex align-items-center">
-                                            <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
-                                            <div class="ml-2">
-                                                <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <a href="">
-                                        <div class="d-flex align-items-center">
-                                            <i class="nav-icon far fa-folder text-dark" style="font-size: 25px;"></i>
-                                            <div class="ml-2">
-                                                <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
-                                            </div>
-                                        </div>
-                                    </a>
+                                    <div class="table-responsive table-card">
+                                        <table class="table mb-0 text-nowrap table-centered">
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Last Modified</th>
+                                                    <th>Size</th>
+                                                    <th>Owner</th>
+                                                    <th>Members</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+
+                                                    <td>Webapp Design & Development</td>
+                                                    <td>Jan 03, 2023, 7:14 PM</td>
+                                                    <td>128 MB</td>
+                                                    <td>Anna Hunter</td>
+                                                    <td><img src="../assets/images/avatar/avatar-11.jpg" class="avatar avatar-xs rounded-circle" alt="">
+                                                        <img src="../assets/images/avatar/avatar-2.jpg" class="avatar avatar-xs rounded-circle" alt="">
+                                                        <img src="../assets/images/avatar/avatar-3.jpg" class="avatar avatar-xs rounded-circle" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#!" class="btn btn-ghost btn-icon btn-sm rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i data-feather="more-vertical" class="icon-xs"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Action</a></li>
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Another
+                                                                        action</a></li>
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Something else
+                                                                        here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>Dashui-figma-design.zip</td>
+                                                    <td>Feb 13, 2023, 7:14 PM</td>
+                                                    <td>521 MB</td>
+                                                    <td>Michael Singh</td>
+                                                    <td><img src="../assets/images/avatar/avatar-4.jpg" class="avatar avatar-xs rounded-circle" alt="">
+                                                        <img src="../assets/images/avatar/avatar-5.jpg" class="avatar avatar-xs rounded-circle" alt="">
+                                                        <img src="../assets/images/avatar/avatar-6.jpg" class="avatar avatar-xs rounded-circle" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#!" class="btn btn-ghost btn-icon btn-sm rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i data-feather="more-vertical" class="icon-xs"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Action</a></li>
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Another
+                                                                        action</a></li>
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Something else
+                                                                        here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>Dahsui-Annual-Report.pdf</td>
+                                                    <td>Dec 18, 2023, 7:14 PM</td>
+                                                    <td>7.2 MB</td>
+                                                    <td>Aaron Leverett</td>
+                                                    <td><img src="../assets/images/avatar/avatar-7.jpg" class="avatar avatar-xs rounded-circle" alt="">
+
+                                                        <img src="../assets/images/avatar/avatar-8.jpg" class="avatar avatar-xs rounded-circle" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#!" class="btn btn-ghost btn-icon btn-sm rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i data-feather="more-vertical" class="icon-xs"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Action</a></li>
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Another
+                                                                        action</a></li>
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Something else
+                                                                        here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>Framer template</td>
+                                                    <td>Nov 25, 2023, 7:14 PM</td>
+                                                    <td>54.2 MB</td>
+                                                    <td>Martin Hurtado</td>
+                                                    <td><img src="../assets/images/avatar/avatar-9.jpg" class="avatar avatar-xs rounded-circle" alt="">
+
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#!" class="btn btn-ghost btn-icon btn-sm rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i data-feather="more-vertical" class="icon-xs"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Action</a></li>
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Another
+                                                                        action</a></li>
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Something else
+                                                                        here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td>Documentation.docs</td>
+                                                    <td>Feb 9, 2023, 7:14 PM</td>
+                                                    <td>8.3 MB</td>
+                                                    <td>Frank Conroy</td>
+                                                    <td><img src="../assets/images/avatar/avatar-10.jpg" class="avatar avatar-xs rounded-circle" alt="">
+                                                        <img src="../assets/images/avatar/avatar-9.jpg" class="avatar avatar-xs rounded-circle" alt="">
+                                                        <img src="../assets/images/avatar/avatar-5.jpg" class="avatar avatar-xs rounded-circle" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <a href="#!" class="btn btn-ghost btn-icon btn-sm rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i data-feather="more-vertical" class="icon-xs"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Action</a></li>
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Another
+                                                                        action</a></li>
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Something else
+                                                                        here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+
+                                                    <td class="border-bottom-0">Dashui Sale Report.exl</td>
+                                                    <td class="border-bottom-0">Feb 9, 2023, 7:14 PM</td>
+                                                    <td class="border-bottom-0">31 MB</td>
+                                                    <td class="border-bottom-0">Edna Knipp</td>
+                                                    <td class="border-bottom-0"><img src="../assets/images/avatar/avatar-6.jpg" class="avatar avatar-xs rounded-circle" alt="">
+
+                                                        <img src="../assets/images/avatar/avatar-7.jpg" class="avatar avatar-xs rounded-circle" alt="">
+                                                    </td>
+                                                    <td class="border-bottom-0">
+                                                        <div class="dropdown">
+                                                            <a href="#!" class="btn btn-ghost btn-icon btn-sm rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <i data-feather="more-vertical" class="icon-xs"></i>
+                                                            </a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Action</a></li>
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Another
+                                                                        action</a></li>
+                                                                <li><a class="dropdown-item d-flex align-items-center" href="#!">Something else
+                                                                        here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
