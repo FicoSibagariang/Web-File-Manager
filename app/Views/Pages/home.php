@@ -41,8 +41,8 @@
                                 <!-- project number -->
                                 <div class="lh-1">
                                     <h1 class="mb-1 text-dark" style="font-weight: bold;">18</h1>
-                                    <p class="mb-0">
-                                        <span class="text-dark me-2 mr-2">2</span>
+                                    <p class="mb-0 text-dark">
+                                        <span class="me-2 mr-2 text-dark">2</span>
                                         Completed
                                     </p>
                                 </div>
@@ -68,7 +68,7 @@
                                 <!-- project number -->
                                 <div class="lh-1">
                                     <h1 class="mb-1 text-dark" style="font-weight: bold;">132</h1>
-                                    <p class="mb-0">
+                                    <p class="mb-0 text-dark">
                                         <span class="text-dark me-2 mr-2">28</span>
                                         Completed
                                     </p>
@@ -94,8 +94,8 @@
                                 </div>
                                 <!-- project number -->
                                 <div class="lh-1">
-                                    <h1 class="mb-1 text-dark" style="font-weight: bold;">12</h1>
-                                    <p class="mb-0">
+                                    <h1 class="mb-1 text-dark" style="font-weight: bold;">8</h1>
+                                    <p class="mb-0 text-dark">
                                         <span class="text-dark me-2 mr-2">1</span>
                                         Completed
                                     </p>

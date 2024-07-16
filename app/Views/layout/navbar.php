@@ -4,10 +4,10 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <div class="profile profile-md profile-indicators profile-online">
+                            <img src="<?= base_url() ?>img/fico.png" alt="User Avatar" class="img-size-40 mr-2 rounded-circle">
+                            <div class="media-body">
                         <a href="#" class="dropdown-item">
-                            <div class="profile profile-md profile-indicators profile-online">
-                                <img src="<?= base_url() ?>img/fico.png" alt="User Avatar" class="img-size-50 mr-2 rounded-circle">
-                                <div class="media-body">
                                     <h3 class="dropdown-item-title">
                                         Brad Diesel
                                         <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
@@ -65,16 +65,9 @@
                         <span class="badge badge-warning navbar-badge">15</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                        <span class="dropdown-header">15 Notifications</span>
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item">
-                            <i class="fas fa-envelope mr-2"></i> 4 new messages
-                            <span class="float-right text-muted text-sm">3 mins</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-users mr-2"></i> 8 friend requests
-                            <span class="float-right text-muted text-sm">12 hours</span>
+                            <i class="fas fa-users mr-2"></i> Log Out
                         </a>
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item">

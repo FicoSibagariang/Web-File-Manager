@@ -1,44 +1,22 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <title>Login V1</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--===============================================================================================-->
-    <link rel="icon" type="image/png" href="<?= base_url('Login_v1') ?>/images/icons/favicon.ico" />
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="<?= base_url('Login_v1') ?>/vendor/bootstrap/css/bootstrap.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="<?= base_url('Login_v1') ?>/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="<?= base_url('Login_v1') ?>/vendor/animate/animate.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="<?= base_url('Login_v1') ?>/vendor/css-hamburgers/hamburgers.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="<?= base_url('Login_v1') ?>/vendor/select2/select2.min.css">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="<?= base_url('Login_v1') ?>/css/util.css">
-    <link rel="stylesheet" type="text/css" href="<?= base_url('Login_v1') ?>/css/main.css">
-    <!--===============================================================================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="<?= base_url('Colorlib') ?>/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="<?= base_url('Colorlib') ?>/css/style.css">
 </head>
-
-<?= $this->renderSection('content'); ?>
-
-<!--===============================================================================================-->
-<script src="<?= base_url('Login_v1') ?>/vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-<script src="<?= base_url('Login_v1') ?>/vendor/bootstrap/js/popper.js"></script>
-<script src="<?= base_url('Login_v1') ?>/vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-<script src="<?= base_url('Login_v1') ?>/vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-<script src="<?= base_url('Login_v1') ?>/vendor/tilt/tilt.jquery.min.js"></script>
-<script>
-    $('.js-tilt').tilt({
-        scale: 1.1
-    })
-</script>
-<!--===============================================================================================-->
-<script src="<?= base_url('Login_v1') ?>/js/main.js"></script>
+<body>
+    <?= $this->renderSection('content'); ?>
+</body>
+    <!-- JS -->
+    <script src="<?= base_url('Colorlib') ?>/vendor/jquery/jquery.min.js"></script>
+    <script src="<?= base_url('Colorlib') ?>/js/main.js"></script>
+<!-- This templates was made by Colorlib (https://colorlib.com) -->
 </html>
