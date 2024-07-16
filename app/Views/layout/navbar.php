@@ -162,7 +162,7 @@
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-user"></i>
                             <p>
-                                Profile
+                                User
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
