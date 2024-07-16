@@ -12,15 +12,14 @@
           </div>
           <!-- text -->
           <div class="card rounded-bottom smooth-shadow-sm ">
-            <div class="d-flex align-items-center justify-content-between pt-4 pb-6 px-4" style="height: 120px;">
+            <div class="d-flex align-items-center justify-content-between pb-4 px-4" style="height: 120px; margin-top:50px;">
               <div class="d-flex align-items-center" style="margin-top: -50px;">
                 <div class="avatar-xxl avatar-indicators
                       avatar-online me-2 position-relative
                       d-flex justify-content-end
                       align-items-end mt-n10">
                   <!-- avatar -->
-                  <img src="<?= base_url() ?>img/download.jpg" class="avatar rounded-circle border" alt="Image" style="width: 100px; background-color: grey;">
-
+                  <img src="<?= base_url() ?>img/download.jpg" class="avatar rounded-circle border" alt="Image" style="width: 100px; height: 100px; background-color: grey;">
                 </div>
                 <!-- text -->
                 <div class="lh-1">
