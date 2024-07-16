@@ -46,8 +46,15 @@ abstract class BaseController extends Controller
     /**
      * @return void
      */
+    protected $db;
+    protected $session;
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
+        // Enable Koneksi Database
+        $this->db = \Config\Database::connect();
+
+        // Enable Session
+        $this->session  = \Config\Services::session();
         // Do Not Edit This Line
         parent::initController($request, $response, $logger);
 

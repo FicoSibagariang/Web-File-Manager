@@ -143,7 +143,7 @@
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
                     <li class="nav-item">
-                        <a href="/" class="nav-link">
+                        <a href="/dashboard" class="nav-link">
                             <i class="nav-icon fas fa-house-user"></i>
                             <p>
                                 Dashboard
@@ -151,7 +151,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/pages/manage" class="nav-link">
+                        <a href="/manage" class="nav-link">
                             <i class="nav-icon fas fa-folder"></i>
                             <p>
                                 File Manager
@@ -168,13 +168,13 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="/pages/project" class="nav-link ">
+                                <a href="/project" class="nav-link ">
                                     <i class="fas fa-solid fa-minus"></i>
                                     <p>Project</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="/pages/files" class="nav-link">
+                                <a href="/files" class="nav-link">
                                     <i class="fas fa-solid fa-minus"></i>
                                     <p>Files</p>
                                 </a>
@@ -182,7 +182,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="/pages/login" class="nav-link">
+                        <a href="/LogoutAkun" class="nav-link">
                             <i class="nav-icon fas fa-power-off"></i>
                             <p>
                                 Log Out
@@ -190,7 +190,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/pages/settings" class="nav-link">
+                        <a href="/settings" class="nav-link">
                             <i class="nav-icon fas fa-wrench"></i>
                             <p>
                                 Settings

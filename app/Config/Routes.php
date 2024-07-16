@@ -5,12 +5,14 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Pages::index');
-$routes->get('/pages/manage', 'Pages::manage');
-$routes->get('/pages/project', 'Pages::project');
-$routes->get('/pages/files', 'Pages::files');
-$routes->get('/pages/activity', 'Pages::activity');
-$routes->get('/pages/login', 'Login::index');
-$routes->get('/pages/signup', 'Signup::index');
-$routes->get('/pages/settings', 'Pages::settings');
-$routes->setAutoRoute(true);
+
+//  auth
+$routes->get('/', 'Login::index');
+$routes->get('/login', 'Login::index');
+$routes->get('/dashboard', 'Dashboard::index');
+$routes->get('/manage', 'FileManager::index');
+$routes->get('/project', 'Project::index');
+$routes->get('/files', 'Files::index');
+$routes->get('/settings', 'Settings::index');
+$routes->post('/LoginAkun', 'Login::loginAkun');
+$routes->get('/LogoutAkun', 'Login::logout');
