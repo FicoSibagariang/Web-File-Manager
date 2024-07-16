@@ -58,7 +58,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link rounded-circle" data-toggle="dropdown" href="#">
                         <div class="user user-panel user-indicator user-online">
-                            <div class="image">
+                            <div class="image" style="margin-top: -10px;">
                                 <img src="<?= base_url() ?>img/fico.png" class="img-circle" alt="User Image">
                             </div>
                         </div>
@@ -177,12 +177,6 @@
                                 <a href="/pages/files" class="nav-link">
                                     <i class="fas fa-solid fa-minus"></i>
                                     <p>Files</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/pages/activity" class="nav-link">
-                                    <i class="fas fa-solid fa-minus"></i>
-                                    <p>Activity</p>
                                 </a>
                             </li>
                         </ul>
