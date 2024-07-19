@@ -203,7 +203,7 @@ body {
 .container {
   width: 1000px;
   background: #fff;
-  margin: 0 auto;
+  margin: 145px auto;
   box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: 0px 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
@@ -213,7 +213,8 @@ body {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   -o-border-radius: 20px;
-  -ms-border-radius: 20px; }
+  -ms-border-radius: 20px;
+ }
 
 .display-flex {
   justify-content: space-between;
@@ -470,10 +471,12 @@ label.valid {
 @media screen and (max-width: 1200px) {
   .container {
     width: calc( 100% - 30px);
-    max-width: 100%; } }
+    max-width: 100%;
+    margin: 145px auto; } }
 @media screen and (min-width: 1024px) {
   .container {
-    max-width: 1200px; } }
+    max-width: 1200px; 
+    margin: 145px auto;} }
 @media screen and (max-width: 768px) {
   .signup-content, .signin-content {
     flex-direction: column;

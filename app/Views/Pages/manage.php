@@ -22,46 +22,46 @@
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link                                                                     text-dark text-muted" aria-current="page" href="#">
-                                        <i class="nav-icon icon-link-hover far fa-folder"></i>
+                                    <a class="nav-link text-dark text-muted" aria-current="page" href="#">
+                                        <i class="nav-icon icon-link-hover far fa-folder text-red"></i>
                                         My Files
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-dark text-muted" aria-current="page" href="#!">
-                                        <i class="nav-icon fab fa-google-drive"></i>
+                                        <i class="nav-icon fab fa-google-drive text-red"></i>
                                         Google Drive
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-dark text-muted" aria-current="page" href="#!">
-                                        <i class="nav-icon fab fa-dropbox"></i>
+                                        <i class="nav-icon fab fa-dropbox text-red"></i>
                                         Dropbox
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-dark text-muted" aria-current="page" href="#!">
-                                        <i class="nav-icon fas fa-share"></i>
+                                        <i class="nav-icon fas fa-share text-red"></i>
                                         Shared with me
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-dark text-muted" aria-current="page" href="#!">
-                                        <i class="nav-icon far fa-clock"></i>
+                                        <i class="nav-icon far fa-clock text-red"></i>
                                         Recent
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
                                     <a class="nav-link text-dark text-muted" aria-current="page" href="#!">
-                                        <i class="nav-icon far fa-star"></i>
+                                        <i class="nav-icon far fa-star text-red"></i>
                                         Starred
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
                                     <a class="nav-link text-dark text-muted" aria-current="page" href="#!">
-                                        <i class=" nav-icon fas fa-trash"></i>
+                                        <i class=" nav-icon fas fa-trash text-red"></i>
                                         Deleted Files
                                     </a>
                                 </li>
@@ -71,7 +71,7 @@
                                     <div class=" mb-3">
                                         <span>Storage</span>
                                         <div class="progress mt-2" style="height: 6px;">
-                                            <div class="progress-bar bg-warning" role="progressbar" aria-label="Example 1px high" style="width: 54%; border-radius: 10px;" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar bg-success" role="progressbar" aria-label="Example 1px high" style="width: 54%; border-radius: 10px;" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                     <span>8.45 GB (56%) of 15 GB used</span>
@@ -86,7 +86,7 @@
         <div class="col-lg-9 ml-3">
             <div class="row" style="margin-bottom: 10px; margin-left: 2px">
                 <form action="#">
-                    <div class="input-group ">
+                    <div class="input-group">
                         <span class="input-group-append" style="width: 200px; position:relative">
                             <input class="form-control rounded-3" type="search" value="" id="searchInput" placeholder="Search">
                             <button class="btn  ms-n10 rounded-0 rounded-end" type="button" style="position: absolute; right:0;">
@@ -108,10 +108,10 @@
                             <div class="card-body">
                                 <a href="">
                                     <div class="d-flex align-items-center">
-                                        <i class="nav-icon far fa-file-word text-dark" style="font-size: 25px; margin-right: 10px;"></i>
+                                        <i class="nav-icon far fa-file-word text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                         <div class="ml-2">
                                             <h5 class="mb-0 text-dark" style="font-size: 20px; font-weight: bold;">Word</h5>
-                                            <span class="fs-6 "><span class="me-2 text-dark">213Kb</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-dark">17 Dec, 2023 06:39 am</span></span>
+                                            <span class="fs-6 "><span class="me-2 text-dark">213Kb</span>&nbsp;&nbsp;&nbsp;<span class="text-dark">17 Dec, 2023 06:39 am</span></span>
                                         </div>
                                     </div>
                                 </a>
@@ -123,10 +123,10 @@
                             <div class="card-body">
                                 <a href="">
                                     <div class="d-flex align-items-center">
-                                        <i class="nav-icon far fa-file-pdf text-dark" style="font-size: 25px; margin-right: 10px;"></i>
+                                        <i class="nav-icon far fa-file-pdf text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                         <div class="ml-2">
                                             <h5 class="mb-0 text-dark" style="font-size: 20px; font-weight: bold;">PDF</h5>
-                                            <span class="fs-6 "><span class="me-2 text-dark">213Kb</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-dark">17 Dec, 2023 06:39 am</span></span>
+                                            <span class="fs-6 "><span class="me-2 text-dark">213Kb</span>&nbsp;&nbsp;&nbsp;<span class="text-dark">17 Dec, 2023 06:39 am</span></span>
                                         </div>
                                     </div>
                                 </a>
@@ -138,10 +138,10 @@
                             <div class="card-body">
                                 <a href="">
                                     <div class="d-flex align-items-center">
-                                        <i class="nav-icon far fa-file-powerpoint text-dark" style="font-size: 25px; margin-right: 10px;"></i>
+                                        <i class="nav-icon far fa-file-powerpoint text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                         <div class="ml-2">
                                             <h5 class="mb-0 text-dark" style="font-size: 20px; font-weight: bold;">PowerPoint</h5>
-                                            <span class="fs-6 "><span class="me-2 text-dark">213Kb</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-dark">17 Dec, 2023 06:39 am</span></span>
+                                            <span class="fs-6 "><span class="me-2 text-dark">213Kb</span>&nbsp;&nbsp;&nbsp;<span class="text-dark">17 Dec, 2023 06:39 am</span></span>
                                         </div>
                                     </div>
                                 </a>
@@ -153,10 +153,10 @@
                             <div class="card-body">
                                 <a href="">
                                     <div class="d-flex align-items-center">
-                                        <i class="nav-icon far fa-file-excel text-dark" style="font-size: 25px; margin-right: 10px;"></i>
+                                        <i class="nav-icon far fa-file-excel text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                         <div class="ml-2">
                                             <h5 class="mb-0 text-dark" style="font-size: 20px; font-weight: bold;">Excel</h5>
-                                            <span class="fs-6 "><span class="me-2 text-dark">213Kb</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-dark">17 Dec, 2023 06:39 am</span></span>
+                                            <span class="fs-6 "><span class="me-2 text-dark">213Kb</span>&nbsp;&nbsp;&nbsp;<span class="text-dark">17 Dec, 2023 06:39 am</span></span>
                                         </div>
                                     </div>
                                 </a>
@@ -168,10 +168,10 @@
                             <div class="card-body">
                                 <a href="">
                                     <div class="d-flex align-items-center">
-                                        <i class="nav-icon far fa-image text-dark" style="font-size: 25px; margin-right: 10px;"></i>
+                                        <i class="nav-icon far fa-image text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                         <div class="ml-2">
                                             <h5 class="mb-0 text-dark" style="font-size: 20px; font-weight: bold;">Image</h5>
-                                            <span class="fs-6 "><span class="me-2 text-dark">213Kb</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-dark">17 Dec, 2023 06:39 am</span></span>
+                                            <span class="fs-6 "><span class="me-2 text-dark">213Kb</span>&nbsp;&nbsp;&nbsp;<span class="text-dark">17 Dec, 2023 06:39 am</span></span>
                                         </div>
                                     </div>
                                 </a>
@@ -183,10 +183,10 @@
                             <div class="card-body">
                                 <a href="">
                                     <div class="d-flex align-items-center">
-                                        <i class="nav-icon far fa-folder text-dark" style="font-size: 25px; margin-right: 10px;"></i>
+                                        <i class="nav-icon far fa-folder text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                         <div class="ml-2">
                                             <h5 class="mb-0 text-dark" style="font-size: 20px; font-weight: bold;">Figma Design</h5>
-                                            <span class="fs-6 "><span class="me-2 text-dark">213Kb</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-dark">17 Dec, 2023 06:39 am</span></span>
+                                            <span class="fs-6 "><span class="me-2 text-dark">213Kb</span>&nbsp;&nbsp;&nbsp;<span class="text-dark">17 Dec, 2023 06:39 am</span></span>
                                         </div>
                                     </div>
                                 </a>
@@ -203,7 +203,7 @@
                             <div class="card-body">
                                 <a href="">
                                     <div class="d-flex align-items-center">
-                                        <i class="nav-icon far fa-folder text-dark" style="font-size: 25px; margin-right: 10px;"></i>
+                                        <i class="nav-icon far fa-folder text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                         <div class="ml-2">
                                             <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
                                         </div>
@@ -217,7 +217,7 @@
                             <div class="card-body">
                                 <a href="">
                                     <div class="d-flex align-items-center">
-                                        <i class="nav-icon far fa-folder text-dark" style="font-size: 25px; margin-right: 10px;"></i>
+                                        <i class="nav-icon far fa-folder text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                         <div class="ml-2">
                                             <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
                                         </div>
@@ -231,7 +231,7 @@
                             <div class="card-body">
                                 <a href="">
                                     <div class="d-flex align-items-center">
-                                        <i class="nav-icon far fa-folder text-dark" style="font-size: 25px; margin-right: 10px;"></i>
+                                        <i class="nav-icon far fa-folder text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                         <div class="ml-2">
                                             <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
                                         </div>
@@ -245,7 +245,7 @@
                             <div class="card-body">
                                 <a href="">
                                     <div class="d-flex align-items-center">
-                                        <i class="nav-icon far fa-folder text-dark" style="font-size: 25px; margin-right: 10px;"></i>
+                                        <i class="nav-icon far fa-folder text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                         <div class="ml-2">
                                             <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
                                         </div>
@@ -259,7 +259,7 @@
                             <div class="card-body">
                                 <a href="">
                                     <div class="d-flex align-items-center">
-                                        <i class="nav-icon far fa-folder text-dark" style="font-size: 25px; margin-right: 10px;"></i>
+                                        <i class="nav-icon far fa-folder text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                         <div class="ml-2">
                                             <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
                                         </div>
@@ -273,7 +273,7 @@
                             <div class="card-body">
                                 <a href="">
                                     <div class="d-flex align-items-center">
-                                        <i class="nav-icon far fa-folder text-dark" style="font-size: 25px; margin-right: 10px;"></i>
+                                        <i class="nav-icon far fa-folder text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                         <div class="ml-2">
                                             <span class="mb-0 text-dark" style="font-size: 20px;">Figma Design</span>
                                         </div>
@@ -288,7 +288,7 @@
                 <div class="col">
                     <div class="card mb-4 mt-5">
                         <div class="card-header">
-                            <h4 class="mb-0" style="font-weight: bold;">Recent Files</h4>
+                            <h4 class="mb-0" style="font-weight: bold; color: red;">Recent Files</h4>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive table-card">
