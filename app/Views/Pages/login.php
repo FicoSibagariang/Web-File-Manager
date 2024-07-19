@@ -1,7 +1,7 @@
 <?= $this->extend('layout/templatelogin'); ?>
 <?= $this->section('content'); ?>
-<section class="sign-in  display-flex-center" style="display: flex; justify-content: center; align-items: center;">
-    <div class="container" style="max-height: max-content;" >
+<section class="sign-in  display-flex-center" style="display: flex; justify-content: center; align-items: center;"> 
+    <div class="container" style="max-height: max-content">
         <div class="signin-content">
             <div class="signin-image">
                 <figure><img src="<?= base_url() ?>img/signin-image.jpg" alt="sing up image"></figure>
@@ -16,15 +16,15 @@
                         </div>
                     <?php } ?>
                     <div class="form-group">
-                        <label for="username"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <label for="username"><i class="zmdi zmdi-account material-icons-name" style="color: #bb2124;"></i></label>
                         <input type="text" name="username" value="<?php echo session()->getFlashdata('member_username') ?>" id="username" placeholder="Username" />
                     </div>
                     <div class="form-group">
-                        <label for="password"><i class="zmdi zmdi-lock"></i></label>
+                        <label for="password"><i class="zmdi zmdi-lock" style="color: #bb2124;"></i></label>
                         <input type="password" name="password" id="password" placeholder="Password" />
                     </div>
                     <div class="form-group form-button">
-                        <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+                        <input type="submit" style="background-color: #bb2124; font-size: 15px; font-weight: bold; padding: 10px 30px; width: auto;" name="signin" id="signin" class="form-submit" value="Log in" />
                     </div>
                 </form>
             </div>
