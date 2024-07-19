@@ -93,7 +93,7 @@
         <div class="card">
             <!-- card header  -->
             <div class="card-header">
-                <h4 class="mb-0" style="font-weight: bold;">Active Projects</h4>
+                <h4 class="mb-0" style="font-weight: bold; color: #f00">Active Projects</h4>
             </div>
             <!-- table  -->
             <div class="card-body">
@@ -101,121 +101,17 @@
                     <table class="table text-nowrap mb-0 table-centered table-hover">
                         <thead class="table-light">
                             <tr>
-                                <th>Project name</th>
-                                <th>Priority</th>
-                                <th>Members</th>
+                                <th style="font-size: 20px;">Project name</th>
+                                <th style="font-size: 20px;">Keterangan Project</th>
+                                <th style="font-size: 20px;">Members</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="ms-3 lh-1">
-                                            <h5 class="mb-1"><a href="#!" class="text-inherit text-dark">Dropbox Design System</a></h5>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td><span class="badge badge-warning-soft">Medium</span></td>
-                                <td>
-                                    <div class="avatar-group">
-                                        <span class="avatar avatar-sm">
-                                            <img alt="avatar bootstrap 5" src="assets/images/avatar/avatar-11.jpg" class="rounded-circle" />
-                                        </span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="ms-3 lh-1">
-                                            <h5 class="mb-1"><a href="#!" class="text-inherit text-dark">Slack Team UI Design</a></h5>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td><span class="badge badge-danger-soft">High</span></td>
-                                <td>
-                                    <div class="avatar-group">
-                                        <span class="avatar avatar-sm">
-                                            <img alt="avatar" src="assets/images/avatar/avatar-4.jpg" class="rounded-circle" />
-                                        </span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="ms-3 lh-1">
-                                            <h5 class="mb-1"><a href="#!" class="text-inherit text-dark">GitHub Satellite</a></h5>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td><span class="badge badge-info-soft">Low</span></td>
-                                <td>
-                                    <div class="avatar-group">
-                                        <span class="avatar avatar-sm">
-                                            <img alt="avatar" src="assets/images/avatar/avatar-7.jpg" class="rounded-circle" />
-                                        </span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="ms-3 lh-1">
-                                            <h5 class="mb-1"><a href="#!" class="text-inherit text-dark">3D Character Modelling</a></h5>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td><span class="badge badge-warning-soft">Medium</span></td>
-                                <td>
-                                    <div class="avatar-group">
-                                        <span class="avatar avatar-sm">
-                                            <img alt="avatar" src="assets/images/avatar/avatar-10.jpg" class="rounded-circle" />
-                                        </span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="ms-3 lh-1">
-                                            <h5 class="mb-1"><a href="#!" class="text-inherit text-dark">Webapp Design System</a></h5>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td><span class="badge badge-success-soft">Track</span></td>
-                                <td>
-                                    <div class="avatar-group">
-                                        <span class="avatar avatar-sm">
-                                            <img alt="avatar" src="assets/images/avatar/avatar-13.jpg" class="rounded-circle" />
-                                        </span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="ms-3 lh-1">
-                                            <h5 class="mb-1"><a href="#!" class="text-inherit text-dark">Github Event Design</a></h5>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td><span class="badge badge-info-soft">Low</span></td>
-                                <td>
-                                    <div class="avatar-group">
-                                        <span class="avatar avatar-sm">
-                                            <img alt="avatar" src="assets/images/avatar/avatar-13.jpg" class="rounded-circle" />
-                                        </span>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
                     </table>
                 </div>
             </div>
             <!-- card footer  -->
             <div class="card-footer text-center">
-                <a href="#!" class="btn btn-info">View All Projects</a>
+                <a href="#!" class="btn btn-danger">View All Projects</a>
             </div>
         </div>
     </div>

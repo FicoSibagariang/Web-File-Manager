@@ -49,7 +49,7 @@
                 "targets": [-1], //last column
                 "render": function(data, type, row) {
                     if (row[4] == "0") {
-                        return "<div class=\"d-inline mx-1\"><a class=\"btn btn-md btn-warning\" href=\"javascript:void(0)\" title=\"Edit\" onclick=\"edit_user(" + row[5] + ")\"> Ubah</a></div> <div class=\"d-inline mx-1\"><a class=\"btn btn-md btn-danger\" href=\"javascript:void(0)\" title=\"Delete\"  onclick=\"deluser(" + row[5] + ")\"><i class=\"fas fa-trash\"></i> Hapus</a></div>"
+                        return "<div class=\"d-inline mx-1\"><a class=\"btn btn-md btn-warning\" href=\"javascript:void(0)\" title=\"Edit\" onclick=\"edit_user(" + row[5] + ")\"> Ubah</a></div><div class=\"d-inline mx-1\"><a class=\"btn btn-md btn-danger\" href=\"javascript:void(0)\" title=\"Delete\"  onclick=\"deluser(" + row[5] + ")\"><i class=\"fas fa-trash\"></i> Hapus Project</a></div>"
                     } else {
                         return "<div class=\"d-inline mx-1\"><a class=\"btn btn-md btn-warning\" href=\"javascript:void(0)\" title=\"Edit\" onclick=\"edit_user(" + row[5] + ")\"> Ubah</a></div> <div class=\"d-inline mx-1\"><a class=\"btn btn-md btn-danger\" href=\"javascript:void(0)\" title=\"Hapus Project\" onclick=\"riset(" + row[5] + ")\"><i></i> Hapus Project</a></div>";
                     }
@@ -315,8 +315,6 @@
                 }
                 $('#btnSave').text('Simpan'); //change button text
                 $('#btnSave').attr('disabled', false); //set button enable
-
-
             },
             error: function(jqXHR, textStatus, errorThrown) {
                 alert(textStatus);

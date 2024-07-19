@@ -49,7 +49,7 @@
             <div class="row justify-content-between
                 align-items-center">
               <div>
-                <i class="far fa-file-excel fa-2x mr-1" style="margin-left: 7px;"></i>
+                <i class="far fa-file-excel fa-2x mr-1" style="margin-left: 7px; color: #f00;"></i>
               </div>
               <div class="d-flex col-lg-6 col-12
                         mb-4 mb-lg-0 ml-4">
@@ -62,7 +62,7 @@
                   <!-- text -->
                   <p class="mb-0
                             ">Uploaded
-                    by <a href="#!">Jitu
+                    by <a class="icon-link icon-link-hover" href="#" style="color: #000;">Jitu
                       Chauhan </a></p>
                 </div>
               </div>
@@ -114,7 +114,7 @@
             <div class="row justify-content-between
                       align-items-center">
               <div>
-                <i class="far fa-file-image fa-2x mr-1" style="margin-left: 7px;"></i>
+                <i class="far fa-file-image fa-2x mr-1" style="margin-left: 7px; color: #f00;"></i>
               </div>
               <div class="d-flex col-lg-6 col-12
                         mb-4 mb-lg-0 ml-4">
@@ -126,7 +126,7 @@
                   <!-- text -->
                   <p class="mb-0
                             ">Uploaded
-                    by <a href="#!">Jitu
+                    by <a href="#" style="color: #000;">Jitu
                       Chauhan </a> on 17
                     Dec, 2023 06:39 am</p>
                 </div>
@@ -179,7 +179,7 @@
             <div class="row justify-content-between
                       align-items-center">
               <div>
-                <i class="far fa-file fa-2x mr-1" style="margin-left: 7px;"></i>
+                <i class="far fa-file fa-2x mr-1" style="margin-left: 7px; color: #f00;"></i>
               </div>
               <div class="d-flex col-lg-6 col-12
                         mb-4 mb-lg-0 ml-4">
@@ -193,7 +193,7 @@
                   <!-- text -->
                   <p class="mb-0">
                     Uploaded by
-                    <a href="#!">
+                    <a href="#" style="color: #000;">
                       Jitu Chauhan
                     </a>
                     on 17 Dec, 2023 06:39 am
@@ -248,7 +248,7 @@
             <div class="row justify-content-between
                       align-items-center">
               <div>
-                <i class="fas fa-table fa-2x mr-1" style="margin-left: 7px;"></i>
+                <i class="fas fa-table fa-2x mr-1" style="margin-left: 7px; color: #f00;"></i>
               </div>
               <div class="d-flex col-lg-6 col-12
                         mb-4 mb-lg-0 ml-3">
@@ -261,7 +261,7 @@
                   <!-- text -->
                   <p class="mb-0
                             ">Uploaded
-                    by <a href="#!">anne
+                    by <a href="#" style="color: #000;">anne
                       brewers </a> on 17
                     Dec, 2023 06:39 am</p>
                 </div>
@@ -314,7 +314,7 @@
             <div class="row justify-content-between
                       align-items-center">
               <div>
-                <i class="far fa-file-powerpoint fa-2x mr-1" style="margin-left: 7px;"></i>
+                <i class="far fa-file-powerpoint fa-2x mr-1" style="margin-left: 7px; color: #f00;"></i>
               </div>
               <div class="d-flex col-lg-6 col-12
                         mb-4 mb-lg-0 ml-4">
@@ -327,7 +327,7 @@
                   <!-- text -->
                   <p class="mb-0
                             ">Uploaded
-                    by <a href="#!">Richard
+                    by <a href="#" style="color: #000;">Richard
                       Christmas</a> on 17
                     Dec, 2023 06:39 am</p>
                 </div>
@@ -380,7 +380,7 @@
             <div class="row justify-content-between
                       align-items-center">
               <div>
-                <i class="fas fa-font fa-2x mr-1" style="margin-left: 7px;"></i>
+                <i class="fas fa-font fa-2x mr-1" style="margin-left: 7px; color: #f00;"></i>
               </div>
               <div class="d-flex col-lg-6 col-12
                         mb-4 mb-lg-0 ml-4">
@@ -393,7 +393,7 @@
                   <!-- text -->
                   <p class="mb-0
                             ">Uploaded
-                    by <a href="#!">Jitu
+                    by <a href="#" style="color: #000;">Jitu
                       Chauhan </a> on 17
                     Dec, 2023 06:39 am</p>
                 </div>
@@ -446,7 +446,7 @@
             <div class="row justify-content-between
                       align-items-center">
               <div>
-                <i class="far fa-file-video fa-2x mr-1" style="margin-left: 7px;"></i>
+                <i class="far fa-file-video fa-2x mr-1" style="margin-left: 7px; color: #f00;"></i>
               </div>
               <div class="d-flex col-lg-6 col-12
                         mb-4 mb-lg-0 ml-4">
@@ -459,7 +459,7 @@
                   <!-- text -->
                   <p class="mb-0
                             ">Uploaded
-                    by <a href="#!">Nicholas
+                    by <a href="#" style="color: #000;">Nicholas
                       binder</a> on 17
                     Dec, 2023 06:39 am</p>
                 </div>
@@ -509,7 +509,5 @@
     </div>
   </div>
 </div>
-
-
 
 <?= $this->endSection(); ?>

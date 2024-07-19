@@ -14,7 +14,6 @@ $routes->get('/project', 'Project::index');
 $routes->get('/project/create', 'Project::create');
 $routes->get('/files', 'Files::index');
 $routes->get('/manajemen_user', 'User::index');
-$routes->get('/settings', 'Settings::index');
 $routes->post('/LoginAkun', 'Login::loginAkun');
 $routes->get('/LogoutAkun', 'Login::logout');
 
