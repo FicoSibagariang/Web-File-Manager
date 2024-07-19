@@ -7,15 +7,15 @@
                         <div class="profile profile-md profile-indicators profile-online">
                             <img src="<?= base_url() ?>img/fico.png" alt="User Avatar" class="img-size-40 mr-2 rounded-circle">
                             <div class="media-body">
-                        <a href="#" class="dropdown-item">
+                                <a href="#" class="dropdown-item">
                                     <h3 class="dropdown-item-title">
                                         Brad Diesel
                                         <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
                                     </h3>
                                     <p class="text-sm">Call me whenever you can...</p>
                                     <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
-                                </div>
                             </div>
+                        </div>
                         </a>
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item">
@@ -144,55 +144,61 @@
 
                     <li class="nav-item">
                         <a href="/dashboard" class="nav-link">
-                            <i class="nav-icon fas fa-house-user"></i>
-                            <p>
+                            <i class="nav-icon fas fa-house-user" style="color: #f00;"></i>
+                            <p style="color: #000;">
                                 Dashboard
                             </p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="/manage" class="nav-link">
-                            <i class="nav-icon fas fa-folder"></i>
-                            <p>
+                            <i class="nav-icon fas fa-folder" style="color: #f00;"></i>
+                            <p style="color: #000;">
                                 File Manager
                             </p>
                         </a>
                     </li>
                     <li class="nav-item menu-open">
                         <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-user"></i>
-                            <p>
+                            <i class="nav-icon fas fa-user" style="color: #f00;"></i>
+                            <p style="color: #000;">
                                 User
-                                <i class="right fas fa-angle-left"></i>
+                                <i class="right fas fa-angle-left" style="color: #000;"></i>
                             </p>
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
                                 <a href="/project" class="nav-link ">
-                                    <i class="fas fa-solid fa-minus"></i>
-                                    <p>Project</p>
+                                    <i class="fas fa-solid fa-minus" style="color: #f00;"></i>
+                                    <p style="color: #000;">Project</p>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="/files" class="nav-link">
-                                    <i class="fas fa-solid fa-minus"></i>
-                                    <p>Files</p>
+                                    <i class="fas fa-solid fa-minus" style="color: #f00;"></i>
+                                    <p style="color: #000;">Files</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/manajemen_user" class="nav-link">
+                                    <i class="fas fa-solid fa-minus" style="color: #f00;"></i>
+                                    <p style="color: #000;">Manajemen User</p>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a href="/LogoutAkun" class="nav-link">
-                            <i class="nav-icon fas fa-power-off"></i>
-                            <p>
+                            <i class="nav-icon fas fa-power-off" style="color: #f00;"></i>
+                            <p style="color: #000;">
                                 Log Out
                             </p>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="/settings" class="nav-link">
-                            <i class="nav-icon fas fa-wrench"></i>
-                            <p>
+                            <i class="nav-icon fas fa-wrench" style="color: #f00;"></i>
+                            <p style="color: #000;">
                                 Settings
                             </p>
                         </a>

@@ -6,6 +6,7 @@ class Settings extends BaseController
 {
     public function index(): string
     {
-        return view('pages/settings');
+        $data['judul'] = 'Manajemen User';
+        return view('pages/settings', $data);
     }
 }

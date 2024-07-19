@@ -6,6 +6,7 @@ class FileManager extends BaseController
 {
     public function index(): string
     {
-        return view('pages/manage');
+        $data['judul'] = 'File Manager';
+        return view('pages/manage', $data);
     }
 }
