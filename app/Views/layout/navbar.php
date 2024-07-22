@@ -1,7 +1,5 @@
 <div class="wrapper">
     <nav class="main-header navbar navbar-custom navbar-expand-lg navbar-light">
-        <div class="container-fluid px-0 container-light" style="height: 40px;">
-        </div>
     </nav>
 
 
