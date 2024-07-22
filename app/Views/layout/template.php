@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/plugins/fontawesome-free/css/all.min.css">
 
     <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/dist/css/adminlte.min.css?v=3.2.0">
-  <link rel="stylesheet" href="<?= base_url('css') ?>/style.css">
+    <link rel="stylesheet" href="<?= base_url('css') ?>/style.css">
 
     <!-- DataTables -->
     <link rel="stylesheet" href="<?php echo base_url(); ?>AdminLTE/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
