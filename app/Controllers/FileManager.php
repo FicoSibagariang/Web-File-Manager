@@ -29,7 +29,7 @@ class FileManager extends BaseController
             return $this->_cek_status();
         }
 
-        $data['judul'] = 'Project';
+        $data['judul'] = 'File Manager';
         $data['modal_data'] = show_my_modal('manage/modal_file', $data);
         $data['js'] = view('manage/manage-js', $data);
         return view('manage/manage', $data);
