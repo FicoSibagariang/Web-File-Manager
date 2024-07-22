@@ -9,8 +9,8 @@
           <div class="card-body" style="height: max-content;">
             <nav class="navbar-mail">
               <ul class="navbar-nav flex-column w-100">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-danger btn-info" style="font-size: 12px;"><i class="fas fa-solid fa-plus mr-1"></i>Create New</button>
+                <div class="btn-group mb-3">
+                  <button type="button" class="btn btn-danger btn-info" style="font-size: 13px;"><i class="fas fa-solid fa-plus mr-3"></i>Create New</button>
 
                   <button type="button" class="btn btn-danger btn-info dropdown-toggle dropdown-icon" data-toggle="dropdown">
                     <span class="sr-only">Toggle Dropdown</span>
@@ -72,7 +72,7 @@
       </div>
 
       <div class="mt-4 mb-6">
-        <h5 class="mb-3" style="font-weight: bold;">Quick Access</h5>
+        <h5 class="mb-3" style="font-weight: bold;">File</h5>
         <div class="row ">
           <div class="col-lg-4">
             <div class="card">
@@ -262,181 +262,23 @@
               <h4 class="mb-0" style="font-weight: bold; color: red;">Recent Files</h4>
             </div>
             <div class="card-body">
-              <div class="table-responsive table-card">
-                <table class="table mb-0 text-nowrap table-centered">
-                  <thead class="table-light">
-                    <tr>
-                      <th>Name</th>
-                      <th>Last Modified</th>
-                      <th>Size</th>
-                      <th>Owner</th>
-                      <th>Members</th>
-                      <th>Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-
-                      <td>Webapp Design & Development</td>
-                      <td>Jan 03, 2023, 7:14 PM</td>
-                      <td>128 MB</td>
-                      <td>Anna Hunter</td>
-                      <td><img src="../assets/images/avatar/avatar-11.jpg" class="avatar avatar-xs rounded-circle" alt="">
-                        <img src="../assets/images/avatar/avatar-2.jpg" class="avatar avatar-xs rounded-circle" alt="">
-                        <img src="../assets/images/avatar/avatar-3.jpg" class="avatar avatar-xs rounded-circle" alt="">
-                      </td>
-                      <td>
-                        <div class="dropdown">
-                          <a href="#!" class="btn btn-ghost btn-icon btn-sm rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i data-feather="more-vertical" class="icon-xs"></i>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Action</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Another
-                                action</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Something else
-                                here</a></li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-
-                      <td>Dashui-figma-design.zip</td>
-                      <td>Feb 13, 2023, 7:14 PM</td>
-                      <td>521 MB</td>
-                      <td>Michael Singh</td>
-                      <td><img src="../assets/images/avatar/avatar-4.jpg" class="avatar avatar-xs rounded-circle" alt="">
-                        <img src="../assets/images/avatar/avatar-5.jpg" class="avatar avatar-xs rounded-circle" alt="">
-                        <img src="../assets/images/avatar/avatar-6.jpg" class="avatar avatar-xs rounded-circle" alt="">
-                      </td>
-                      <td>
-                        <div class="dropdown">
-                          <a href="#!" class="btn btn-ghost btn-icon btn-sm rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i data-feather="more-vertical" class="icon-xs"></i>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Action</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Another
-                                action</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Something else
-                                here</a></li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-
-                      <td>Dahsui-Annual-Report.pdf</td>
-                      <td>Dec 18, 2023, 7:14 PM</td>
-                      <td>7.2 MB</td>
-                      <td>Aaron Leverett</td>
-                      <td><img src="../assets/images/avatar/avatar-7.jpg" class="avatar avatar-xs rounded-circle" alt="">
-
-                        <img src="../assets/images/avatar/avatar-8.jpg" class="avatar avatar-xs rounded-circle" alt="">
-                      </td>
-                      <td>
-                        <div class="dropdown">
-                          <a href="#!" class="btn btn-ghost btn-icon btn-sm rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i data-feather="more-vertical" class="icon-xs"></i>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Action</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Another
-                                action</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Something else
-                                here</a></li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-
-                      <td>Framer template</td>
-                      <td>Nov 25, 2023, 7:14 PM</td>
-                      <td>54.2 MB</td>
-                      <td>Martin Hurtado</td>
-                      <td><img src="../assets/images/avatar/avatar-9.jpg" class="avatar avatar-xs rounded-circle" alt="">
-
-                      </td>
-                      <td>
-                        <div class="dropdown">
-                          <a href="#!" class="btn btn-ghost btn-icon btn-sm rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i data-feather="more-vertical" class="icon-xs"></i>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Action</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Another
-                                action</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Something else
-                                here</a></li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-
-                      <td>Documentation.docs</td>
-                      <td>Feb 9, 2023, 7:14 PM</td>
-                      <td>8.3 MB</td>
-                      <td>Frank Conroy</td>
-                      <td><img src="../assets/images/avatar/avatar-10.jpg" class="avatar avatar-xs rounded-circle" alt="">
-                        <img src="../assets/images/avatar/avatar-9.jpg" class="avatar avatar-xs rounded-circle" alt="">
-                        <img src="../assets/images/avatar/avatar-5.jpg" class="avatar avatar-xs rounded-circle" alt="">
-                      </td>
-                      <td>
-                        <div class="dropdown">
-                          <a href="#!" class="btn btn-ghost btn-icon btn-sm rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i data-feather="more-vertical" class="icon-xs"></i>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Action</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Another
-                                action</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Something else
-                                here</a></li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-
-                      <td class="border-bottom-0">Dashui Sale Report.exl</td>
-                      <td class="border-bottom-0">Feb 9, 2023, 7:14 PM</td>
-                      <td class="border-bottom-0">31 MB</td>
-                      <td class="border-bottom-0">Edna Knipp</td>
-                      <td class="border-bottom-0"><img src="../assets/images/avatar/avatar-6.jpg" class="avatar avatar-xs rounded-circle" alt="">
-
-                        <img src="../assets/images/avatar/avatar-7.jpg" class="avatar avatar-xs rounded-circle" alt="">
-                      </td>
-                      <td class="border-bottom-0">
-                        <div class="dropdown">
-                          <a href="#!" class="btn btn-ghost btn-icon btn-sm rounded-circle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i data-feather="more-vertical" class="icon-xs"></i>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Action</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Another
-                                action</a></li>
-                            <li><a class="dropdown-item d-flex align-items-center" href="#!">Something else
-                                here</a></li>
-                          </ul>
-                        </div>
-                      </td>
-                    </tr>
-
-
-
-                  </tbody>
-                </table>
-
-              </div>
+              <table id="tabel_recent_file" class="table table-bordered table-striped table-hover">
+                <thead>
+                  <tr class="bg-red text-center">
+                    <th>Nama File</th>
+                    <th>Last Modified</th>
+                    <th>Size</th>
+                    <th>Created by</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 </div>
 

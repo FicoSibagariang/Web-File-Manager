@@ -1,6 +1,7 @@
 <script type="text/javascript">
     var save_method; //for save method string
     var table;
+    var table_recent_file;
     var file;
 
     $(document).ready(function() {
@@ -69,6 +70,34 @@
                 "orderable": false,
                 "targets": 0
             }],
+
+        });
+
+        table_recent_file = $("#tabel_recent_file").DataTable({
+            // "lengthMenu": [5, 10],
+            "paging": false,
+            "searching": false,
+            "info": false,
+            "responsive": true,
+            "autoWidth": false,
+            "language": {
+                "sEmptyTable": "Data Belum Ada"
+            },
+            "processing": true, //Feature control the processing indicator.
+            "serverSide": true, //Feature control DataTables' server-side processing mode.
+            "order": [], //Initial no order.
+
+            // Load data for the table's content from an Ajax source
+            "ajax": {
+                "url": "<?php echo base_url('manage_ajax_list_recent_file') ?>",
+                "type": "POST"
+            },
+            //Set column definition initialisation properties.
+            "columnDefs": [{
+                "targets": ["_all"],
+                "className": 'text-center',
+                "orderable": false,
+            }, ],
 
         });
 

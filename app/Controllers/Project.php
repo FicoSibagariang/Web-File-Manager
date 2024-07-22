@@ -178,9 +178,9 @@ class Project extends BaseController
     public function delete()
     {
         $id = $this->request->getVar('id');
-        $builder = $this->db->table('tbl_user');
+        $builder = $this->db->table('tbl_project');
         $get = $builder->getWhere(['id_project' => $id])->getRow();
-        $dir = str_replace("\\", "/", FCPATH . 'uploads/user');
+        $dir = str_replace("\\", "/", FCPATH . 'uploads/project');
 
         if ($get->file != null) {
             //hapus gambar yg ada diserver
