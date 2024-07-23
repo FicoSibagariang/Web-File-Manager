@@ -16,8 +16,8 @@
           <input type="hidden" value="" name="type" />
           <div class="card-body">
             <div class="form-group mb-3">
-              <label class="form-label fs-14 text-dark" for="nama">Nama</label>
-              <input type="text" class="form-control" name="nama" id="nama" placeholder="Nama">
+              <label class="form-label fs-14 text-dark" for="nama" id="label_name">Nama</label>
+              <input type="text" class="form-control" name="nama" id="nama" placeholder="Name">
               <small class="help-block"></small>
             </div>
             <div class="form-group mb-3">

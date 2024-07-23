@@ -23,6 +23,14 @@ class FileManager extends BaseController
         return $this->Fungsi->ValidasiLogin($logged_in);
     }
 
+    public function recent()
+    {
+        $data['judul'] = 'Recent Files';
+        $data['modal_data'] = show_my_modal('manage/modal_file', $data);
+        $data['js'] = view('manage/manage-js', $data);
+        return view('manage/recent', $data);
+    }
+
     public function index()
     {
         // Jika _cek_status mengembalikan redirect, kita lanjutkan dengan redirect tersebut
@@ -38,24 +46,30 @@ class FileManager extends BaseController
 
     public function ajax_list()
     {
+        $id_parent = $this->request->getVar('id_parent');
+        $param_parent_id = "0";
+        if ($id_parent) {
+            $param_parent_id = $id_parent;
+        }
         ini_set('memory_limit', '512M');
         set_time_limit(3600);
-        $str_query = "SELECT * FROM tbl_project";
+        $str_query = "SELECT * FROM tbl_file where id_parent=" . $param_parent_id . "";
 
         $count = $this->db->query($str_query);
-        $query = $this->db->query($str_query . " order by " . ($_POST['draw'] == "1" ? " id_project ASC" : " id_project ASC "));
+        $query = $this->db->query($str_query . " order by " . ($_POST['draw'] == "1" ? " type asc" : " type asc"));
 
         $data = array();
         $no = $_POST['start'];
         foreach ($query->getResult() as $tampil) {
             $no++;
             $row = array();
-            $row[] = $no;
-            $row[] = $tampil->nama_project;
-            $row[] = $tampil->id_parent;
+            $row[] = $tampil->nama;
+            $row[] = $tampil->keterangan;
             $row[] = $tampil->type;
-            $row[] = $tampil->ket_project;
-            $row[] = $tampil->status;
+            $row[] = $tampil->updated_at;
+            $row[] = $tampil->id;
+            $row[] = $tampil->type_file;
+            $row[] = $tampil->id_parent;
             $data[] = $row;
         }
 
@@ -112,9 +126,9 @@ class FileManager extends BaseController
     }
 
 
-    public function editfile($id)
+    public function edit($id)
     {
-        $data = $this->Mod_file->getFile($id);
+        $data = $this->Mod_file->getById($id);
         echo json_encode($data);
     }
 
@@ -123,20 +137,15 @@ class FileManager extends BaseController
         $builder = $this->db->table('tbl_file');
         $method = $this->request->getVar('method');
         $id = $this->request->getVar('id');
-        $pasfoto = $this->request->getFile('file');
+        $id_parent = $this->request->getVar('id_parent');
+        $type = $this->request->getVar('type');
+        $file = $this->request->getFile('file');
 
         $rules = [
-            'user_created' => [
-                'rules'  => 'required|min_length[5]',
-                'errors' => [
-                    'required' => 'Username tidak boleh kosong.',
-                    'min_length' => 'Username minimal 5 karakter'
-                ],
-            ],
             'nama' => [
                 'rules'  => 'required',
                 'errors' => [
-                    'required' => 'Nama Project tidak boleh kosong.',
+                    'required' => 'Nama tidak boleh kosong.',
                 ],
             ],
             'keterangan' => [
@@ -147,19 +156,21 @@ class FileManager extends BaseController
             ],
 
         ];
-        $rules['file'] = [
-            'rules'  => 'uploaded[file]',
-            'errors' => [
-                'uploaded' => 'File tidak boleh kosong.',
-            ]
-        ];
+
+        if ($type === 'file') {
+            $rules['file'] = [
+                'rules'  => 'uploaded[file]',
+                'errors' => [
+                    'uploaded' => 'File tidak boleh kosong.',
+                ]
+            ];
+        }
 
 
         if (!$this->validate($rules)) {
             $data = [
                 'status'    => false,
                 'errors'    => [
-                    'user_created' => $this->validator->getError('user_created'),
                     'nama' => $this->validator->getError('nama'),
                     'keterangan' => $this->validator->getError('keterangan'),
                     'validasi_file' => $this->validator->getError('file'),
@@ -168,23 +179,26 @@ class FileManager extends BaseController
             echo json_encode($data);
         } else {
             $save  = array(
-                'user_created' => $this->request->getVar('user_created'),
                 'nama' => $this->request->getVar('nama'),
                 'keterangan'  => $this->request->getVar('keterangan'),
+                'type'  => $this->request->getVar('type'),
+                'id_parent'  => $id_parent,
             );
 
             $get = $builder->where(['id' => $id])->get()->getRow();
             $dir = str_replace("\\", "/", FCPATH . 'uploads/file');
             if (!empty($_FILES['file']['name'])) {
-                if ($pasfoto->isValid() && !$pasfoto->hasMoved()) {
+                if ($file->isValid() && !$file->hasMoved()) {
 
-                    $newName = $pasfoto->getRandomName();
-                    $pasfoto->move($dir, $newName, true);
+                    $newName = $file->getRandomName();
+                    $file->move($dir, $newName, true);
 
                     $save['file'] = $newName;
+                    $save['size_file_kb'] = $file->getSize();
+                    $save['type_file'] = $file->getClientExtension();
 
                     if ($method === 'edit') {
-                        if ($get->photo != null) {
+                        if ($get->file != null) {
                             //hapus file yg ada diserver
                             unlink($dir . '/' . $get->file);
                         }
@@ -193,11 +207,12 @@ class FileManager extends BaseController
             }
 
             if ($method === 'add') {
+                $save['user_created'] = session()->get('id_user');
                 $save['updated_at'] = date('Y-m-d H:i:s');
                 $action = $builder->insert($save);
             } else {
                 $save['updated_at'] = date('Y-m-d H:i:s');
-                $action = $builder->update($save, ['id_project' => $id]);
+                $action = $builder->update($save, ['id' => $id]);
             }
             if ($action) {
                 echo json_encode(['status' => TRUE]);
@@ -209,16 +224,16 @@ class FileManager extends BaseController
     public function delete()
     {
         $id = $this->request->getVar('id');
-        $builder = $this->db->table('tbl_manage');
-        $get = $builder->getWhere(['id_file' => $id])->getRow();
-        $dir = str_replace("\\", "/", FCPATH . 'uploads/manage');
+        $builder = $this->db->table('tbl_file');
+        $get = $builder->getWhere(['id' => $id])->getRow();
+        $dir = str_replace("\\", "/", FCPATH . 'uploads/file');
 
         if ($get->file != null) {
             //hapus gambar yg ada diserver
             unlink($dir . '/' . $get->file);
         }
 
-        $action = $builder->delete(['id_project' => $id]);
+        $action = $builder->delete(['id' => $id]);
         if ($action) {
             echo json_encode(['status' => TRUE]);
         } else {

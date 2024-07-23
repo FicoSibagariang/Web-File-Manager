@@ -5,37 +5,7 @@
 <div class="container-fluid">
   <div class="row align-items-center">
     <div class="col-xl-12 col-lg-12 col-md-12 col-12">
-      <!-- Bg -->
-      <div class="pt-20 rounded-top no-repeat; background-size: cover; mt-3" style="border-radius: 0px 0px 5px 5px;">
-        <div style="width: 100%; height: 130px; border-radius: 5px 5px 0px 0px; background-color:red"></div>
-      </div>
-      <!-- text -->
-      <div class="card rounded-bottom smooth-shadow-sm ">
-        <div class="d-flex align-items-center justify-content-between pb-4 px-4" style="height: 120px; margin-top:40px;">
-          <div class="d-flex align-items-center" style="margin-top: -50px;">
-            <div class="avatar-xxl avatar-indicators
-                      avatar-online me-2 position-relative
-                      d-flex justify-content-end
-                      align-items-end mt-n10">
-              <!-- avatar -->
-              <img src="<?= base_url() ?>img/download.jpg" class="avatar rounded-circle border" alt="Image" style="width: 100px; height: 100px; background-color: grey;">
-            </div>
-            <!-- text -->
-            <div class="lh-1">
-              <h2 class="mb-0 ml-3">Jitu Chauhan
-                <a href="#!" class="text-decoration-none">
-                </a>
-              </h2>
-              <p class="mb-0 d-block ml-3">@imjituchauhan</p>
-            </div>
-          </div>
-          <div class="mb-5">
-            <a href="/settings" class="btn btn-danger d-none d-md-block">
-              Edit Profile
-            </a>
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
   <!-- content -->

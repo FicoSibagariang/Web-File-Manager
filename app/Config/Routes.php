@@ -33,8 +33,9 @@ $routes->post('/project/delete', 'Project::delete');
 
 // MANAGE FILE
 $routes->get('/manage', 'FileManager::index');
-$routes->post('/manage_ajax_list', 'FileManager::ajax_list');
-$routes->post('/manage_ajax_list_recent_file', 'FileManager::ajax_list_recent_file');
-$routes->get('/manage/editfile/(:any)', 'FileManager::editfile/$1');
+$routes->get('/recent', 'FileManager::recent');
+$routes->post('/file_ajax_list', 'FileManager::ajax_list');
+$routes->post('/recent_ajax_list_recent_file', 'FileManager::ajax_list_recent_file');
+$routes->get('/manage/edit/(:any)', 'FileManager::edit/$1');
 $routes->post('/manage/save', 'FileManager::save');
 $routes->post('/manage/delete', 'FileManager::delete');

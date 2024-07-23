@@ -9,24 +9,24 @@ class Mod_file extends Model
 {
     public function cekUsername($username)
     {
-        $query = $this->db->table('tbl_project')
+        $query = $this->db->table('tbl_user')
             ->where('username', $username)
             ->get();
         return $query;
     }
 
-    public function cekProjectUpdate($nama_project)
+    public function cekFile($nama)
     {
         $query = $this->db->table('tbl_project')
-            ->where('nama_project', $nama_project)
+            ->where('nama', $nama)
             ->get();
         return $query;
     }
 
-    public function getProject($id)
+    public function getById($id)
     {
-        $query = $this->db->table('tbl_project')
-            ->where('id_project', $id)
+        $query = $this->db->table('tbl_file')
+            ->where('id', $id)
             ->get()->getRow();
         return $query;
     }

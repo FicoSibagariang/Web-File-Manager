@@ -70,7 +70,7 @@
                 "targets": 0
             }],
 
-        });
+        }); 
 
         $("input").change(function() {
             $(this).parent().parent().removeClass('has-error');

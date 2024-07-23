@@ -7,11 +7,11 @@
         <div class="card h-100 card-lift" style="border-radius: 10px;">
             <!-- card body -->
             <div class="card-body" style="background-color: #fff; border-radius: 10px;">
-                <a href="/pages/project">
+                <a href="/recent">
                     <!-- heading -->
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <div>
-                            <h4 class="mb-0 text-danger" style="font-size: 20px; font-weight:bold;">Projects</h4>
+                            <h4 class="mb-0 text-danger" style="font-size: 23px; font-weight:bold;">Files</h4>
                         </div>
                         <div class="icon-shape icon-md bg-primary-soft rounded-2">
                             <i class="fas fa-suitcase fa-2x text-danger"></i>
@@ -36,11 +36,11 @@
             <!-- card body -->
 
             <div class="card-body" style="background-color: #fff; border-radius: 10px;">
-                <a href="">
+                <a href="/recent">
                     <!-- heading -->
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <div>
-                            <h4 class="mb-0 text-danger" style="font-size: 20px; font-weight:bold">Activity</h4>
+                            <h4 class="mb-0 text-danger" style="font-size: 23px; font-weight:bold">Folder</h4>
                         </div>
                         <div class="icon-shape icon-md bg-danger-soft text-danger rounded-2">
                             <i class="fas fa-list fa-2x text-danger"></i>
@@ -63,11 +63,11 @@
         <div class="card h-100 card-lift" style="border-radius: 10px;">
             <!-- card body -->
             <div class="card-body" style="background-color: #fff; border-radius: 10px;">
-                <a href="">
+                <a href="/manajemen_user">
                     <!-- heading -->
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <div>
-                            <h4 class="mb-0 text-danger" style="font-size: 20px; font-weight:bold">Teams</h4>
+                            <h4 class="mb-0 text-danger" style="font-size: 23px; font-weight:bold">Teams</h4>
                         </div>
                         <div class="icon-shape icon-md bg-danger-soft text-danger rounded-2">
                             <i class="fas fa-user fa-2x text-danger"></i>

@@ -1,5 +1,7 @@
 <div class="wrapper">
     <nav class="main-header navbar navbar-custom navbar-expand-lg navbar-light">
+        <div class="container-fluid px-0 container-light" style="height: 40px;">
+        </div>
     </nav>
 
 
@@ -43,7 +45,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="/manage" class="nav-link">
+                        <a href="/recent" class="nav-link">
                             <i class="nav-icon fas fa-folder" style="color: #f00;"></i>
                             <p style="color: #000;">
                                 File Manager
@@ -59,18 +61,6 @@
                             </p>
                         </a>
                         <ul class="nav nav-treeview">
-                            <li class="nav-item">
-                                <a href="/project" class="nav-link ">
-                                    <i class="fas fa-solid fa-minus" style="color: #f00;"></i>
-                                    <p style="color: #000;">Project</p>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/files" class="nav-link">
-                                    <i class="fas fa-solid fa-minus" style="color: #f00;"></i>
-                                    <p style="color: #000;">Files</p>
-                                </a>
-                            </li>
                             <li class="nav-item">
                                 <a href="/manajemen_user" class="nav-link">
                                     <i class="fas fa-solid fa-minus" style="color: #f00;"></i>
