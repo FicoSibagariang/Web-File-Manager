@@ -132,6 +132,34 @@ class FileManager extends BaseController
         echo json_encode($data);
     }
 
+    public function get_data_file()
+    {
+        $id_parent = $this->request->getVar('id_parent');
+
+        $data = $this->Mod_file->getByIdParent($id_parent, 'file');
+
+        $response = array(
+            "status" => 'sukses',
+            "data" => $data
+        );
+
+        echo json_encode($response);
+    }
+
+    public function get_data_folder()
+    {
+        $id_parent = $this->request->getVar('id_parent');
+
+        $data = $this->Mod_file->getByIdParent($id_parent, 'folder');
+
+        $response = array(
+            "status" => 'sukses',
+            "data" => $data
+        );
+
+        echo json_encode($response);
+    }
+
     public function save()
     {
         $builder = $this->db->table('tbl_file');
@@ -206,6 +234,8 @@ class FileManager extends BaseController
                 }
             }
 
+            date_default_timezone_set('Asia/Jakarta');
+
             if ($method === 'add') {
                 $save['user_created'] = session()->get('id_user');
                 $save['updated_at'] = date('Y-m-d H:i:s');
@@ -240,4 +270,12 @@ class FileManager extends BaseController
             echo json_encode(['status' => FALSE]);
         }
     }
+    
+    public function type()
+    {
+        $data['judul'] = 'Word Files';
+        return view('/type', $data);
+    }
+    
+
 }

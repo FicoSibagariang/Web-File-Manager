@@ -30,4 +30,23 @@ class Mod_file extends Model
             ->get()->getRow();
         return $query;
     }
+
+    public function getByIdParent($id_parent = null, $type = null)
+    {
+        if ($id_parent) {
+            $query = $this->db->table('tbl_file a')
+                ->select('a.*,b.nama as nama_created')
+                ->join('tbl_user b ', 'a.user_created=b.id_user')
+                ->where('a.id_parent', $id_parent)
+                ->where('a.type', $type)
+                ->get()->getResult();
+        } else {
+            $query = $this->db->table('tbl_file a')
+                ->select('a.*,b.nama as nama_created')
+                ->join('tbl_user b ', 'a.user_created=b.id_user')
+                ->where('a.type', $type)
+                ->get()->getResult();
+        }
+        return $query;
+    }
 }
