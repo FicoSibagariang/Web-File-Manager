@@ -32,13 +32,7 @@
                                         My Files
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark text-muted" aria-current="page" href="#!">
-                                        <i class=" nav-icon fas fa-trash text-red"></i>
-                                        Deleted Files
-                                    </a>
-                                </li>
-                                <br><br><br><br><br><br><br><br><br><br>
+                                <br><br><br><br><br><br><br><br><br><br><br><br><br>
                             </ul>
 
                         </nav>
@@ -161,7 +155,7 @@
                                         <div class="col-lg-4">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <a href="">
+                                                    <a href="/word">
                                                         <div class="d-flex align-items-center">
                                                             <i class="nav-icon far fa-file-word text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                                             <div class="ml-2">
@@ -176,7 +170,7 @@
                                         <div class="col-lg-4">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <a href="">
+                                                    <a href="/pdf">
                                                         <div class="d-flex align-items-center">
                                                             <i class="nav-icon far fa-file-pdf text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                                             <div class="ml-2">
@@ -191,7 +185,7 @@
                                         <div class="col-lg-4">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <a href="">
+                                                    <a href="/powerpoint">
                                                         <div class="d-flex align-items-center">
                                                             <i class="nav-icon far fa-file-powerpoint text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                                             <div class="ml-2">
@@ -206,7 +200,7 @@
                                         <div class="col-lg-4">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <a href="">
+                                                    <a href="/excel">
                                                         <div class="d-flex align-items-center">
                                                             <i class="nav-icon far fa-file-excel text-red" style="font-size: 25px; margin-right: 10px;"></i>
                                                             <div class="ml-2">

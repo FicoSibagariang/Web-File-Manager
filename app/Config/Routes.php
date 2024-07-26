@@ -33,14 +33,17 @@ $routes->post('/project/delete', 'Project::delete');
 
 // MANAGE FILE
 $routes->get('/manage', 'FileManager::index');
+$routes->get('/word', 'FileManager::word');
+$routes->get('/pdf', 'FileManager::pdf');
+$routes->get('/powerpoint', 'FileManager::powerpoint');
+$routes->get('/excel', 'FileManager::excel');
 $routes->get('/recent', 'FileManager::recent');
 $routes->post('/file_ajax_list', 'FileManager::ajax_list');
-$routes->post('/recent_ajax_list_recent_file', 'FileManager::ajax_list_recent_file');
+$routes->post('/ajax_list_recent_file', 'FileManager::ajax_list_recent_file');
 $routes->get('/manage/edit/(:any)', 'FileManager::edit/$1');
 $routes->post('/manage/save', 'FileManager::save');
 $routes->post('/manage/delete', 'FileManager::delete');
+$routes->post('/recent/get_data_file', 'FileManager::get_data_file');
 $routes->post('/manage/get_data_file', 'FileManager::get_data_file');
+$routes->post('/manage/get_data_file_byType', 'FileManager::get_data_file_byType');
 $routes->post('/manage/get_data_folder', 'FileManager::get_data_folder');
-$routes->post('/manage/get_data_folder', 'FileManager::get_data_folder');
-
-

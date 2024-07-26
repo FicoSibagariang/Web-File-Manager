@@ -23,6 +23,43 @@ class FileManager extends BaseController
         return $this->Fungsi->ValidasiLogin($logged_in);
     }
 
+    public function word()
+    {
+        $data['judul'] = 'Word Files';
+
+        $data['type_file'] = 'docx';
+        $data['js'] = view('manage/file-js', $data);
+        return view('manage/file', $data);
+    }
+
+    public function pdf()
+    {
+        $data['judul'] = 'PDF Files';
+
+        $data['type_file'] = 'pdf';
+        $data['js'] = view('manage/file-js', $data);
+        return view('manage/file', $data);
+    }
+
+    public function powerpoint()
+    {
+        $data['judul'] = 'PPT Files';
+
+        $data['type_file'] = 'pptx';
+        $data['js'] = view('manage/file-js', $data);
+        return view('manage/file', $data);
+    }
+
+    public function excel()
+    {
+        $data['judul'] = 'Excel Files';
+
+        $data['type_file'] = 'xlsx';
+        $data['type_file'] = 'csv';
+        $data['js'] = view('manage/file-js', $data);
+        return view('manage/file', $data);
+    }
+
     public function recent()
     {
         $data['judul'] = 'Recent Files';
@@ -53,10 +90,10 @@ class FileManager extends BaseController
         }
         ini_set('memory_limit', '512M');
         set_time_limit(3600);
-        $str_query = "SELECT * FROM tbl_file where id_parent=" . $param_parent_id . "";
+        $str_query = "SELECT * FROM tbl_file where id_parent=" . $param_parent_id . " " . ($_POST['search']['value'] != "" ? "AND nama like '%" . $_POST['search']['value'] . "%'" : "");
 
         $count = $this->db->query($str_query);
-        $query = $this->db->query($str_query . " order by " . ($_POST['draw'] == "1" ? " type asc" : " type asc"));
+        $query = $this->db->query($str_query . " ORDER BY " . ($_POST['draw'] == "1" ? " type asc" : " type asc") . " LIMIT " . $_POST['length'] . " OFFSET " . $_POST['start']);
 
         $data = array();
         $no = $_POST['start'];
@@ -75,10 +112,6 @@ class FileManager extends BaseController
 
         $output = array(
             "draw" => $_POST['draw'],
-            "search" => $_POST['search'],
-            "start" => $_POST['start'],
-            "length" => $_POST['length'],
-            "columns" => $_POST['columns'],
             "recordsFiltered" => $count->getNumRows(),
             "recordsTotal" => $count->getNumRows(),
             "data" => $data
@@ -92,21 +125,20 @@ class FileManager extends BaseController
     {
         ini_set('memory_limit', '512M');
         set_time_limit(3600);
-        $str_query = "SELECT a.*,b.nama as nama_user FROM tbl_file a LEFT JOIN tbl_user b ON a.user_created=b.id_user where type='file'";
+        $str_query = "SELECT a.*,a.updated_at as last_modified, b.nama as created_by FROM tbl_file a LEFT JOIN tbl_user b ON a.user_created=b.id_user where a.type='file'";
 
         $count = $this->db->query($str_query);
-        $query = $this->db->query($str_query . " ORDER BY " . ($_POST['draw'] == "1" ? "  updated_at ASC" : "  updated_at ASC "));
+        $query = $this->db->query($str_query . " ORDER BY " . ($_POST['draw'] == "1" ? "  a.updated_at ASC" : "  a.updated_at ASC "));
 
         $data = array();
         $no = $_POST['start'];
         foreach ($query->getResult() as $tampil) {
             $no++;
             $row = array();
-            $row[] = $tampil->nama;
-            $row[] = $tampil->updated_at;
-            $row[] = $tampil->size_file_kb;
-            $row[] = $tampil->ket_project;
-            $row[] = $tampil->nama_user;
+            $row[] = $tampil->nama . '.' . $tampil->type_file;
+            $row[] = $tampil->last_modified;
+            $row[] = $this->convert_filesize($tampil->size_file_kb);
+            $row[] = $tampil->created_by;
             $data[] = $row;
         }
 
@@ -125,6 +157,13 @@ class FileManager extends BaseController
         echo json_encode($output);
     }
 
+    public function convert_filesize($bytes, $decimals = 2)
+    {
+        $size = array(' B', ' kB', ' MB', ' GB', ' TB', ' PB', ' EB', ' ZB', ' YB');
+        $factor = floor((strlen($bytes) - 1) / 3);
+        return sprintf("%.{$decimals}f", $bytes / pow(1024, $factor)) . @$size[$factor];
+    }
+
 
     public function edit($id)
     {
@@ -137,6 +176,22 @@ class FileManager extends BaseController
         $id_parent = $this->request->getVar('id_parent');
 
         $data = $this->Mod_file->getByIdParent($id_parent, 'file');
+
+        $response = array(
+            "status" => 'sukses',
+            "data" => $data
+        );
+
+        echo json_encode($response);
+    }
+
+    public function get_data_file_byType()
+    {
+        $nama = $this->request->getVar('nama');
+        $id_parent = $this->request->getVar('id_parent');
+        $type_file = $this->request->getVar('type_file');
+
+        $data = $this->Mod_file->getFile($id_parent, 'file', $type_file, $nama);
 
         $response = array(
             "status" => 'sukses',
@@ -270,12 +325,4 @@ class FileManager extends BaseController
             echo json_encode(['status' => FALSE]);
         }
     }
-    
-    public function type()
-    {
-        $data['judul'] = 'Word Files';
-        return view('/type', $data);
-    }
-    
-
 }
