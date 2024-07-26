@@ -76,7 +76,7 @@
                                 param_icon = "far fa-file-pdf";
                             }
 
-                            return "<a class=\"\" href=\"javascript:void(0)\" title=\"Edit\" onclick=\"download(" + row[4] + ")\"><i class=\"" + param_icon + " mr-2\"></i> " + row[0] + "." + row[5] + "</a>";
+                            return "<a class=\"\" href=\"javascript:void(0)\" title=\"download\" onclick=\"download_data(" + row[4] + ")\"><i class=\"" + param_icon + " mr-2\"></i> " + row[0] + "." + row[5] + "</a>";
                         }
                     }
                 },
@@ -105,12 +105,12 @@
 
             // Load data for the table's content from an Ajax source
             "ajax": {
-                "url": "<?php echo base_url('recent_ajax_list_recent_file') ?>",
+                "url": "<?php echo base_url('ajax_list_recent_file') ?>",
                 "type": "POST"
             },
             //Set column definition initialisation properties.
             "columnDefs": [{
-                "targets": ["_all"],
+                "targets": [1, 2, 3],
                 "className": 'text-center',
                 "orderable": false,
             }, ],
@@ -181,6 +181,39 @@
                 table.draw();
                 getDataFile(data.id_parent);
                 console.log('parent ' + $('#parent_id').val())
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                alert('Error get data from ajax');
+            }
+        });
+    }
+
+    function download_data(id) {
+        $.ajax({
+            url: "<?php echo site_url('manage/edit') ?>/" + id,
+            type: "GET",
+            dataType: "JSON",
+            success: function(data) {
+                // Nama file yang akan diunduh
+                var fileName = data.file; // Ubah sesuai nama file yang ada di direktori
+
+                // Path ke file yang akan diunduh
+                var filePath = "<?= base_url() ?>uploads/file/" + fileName; // Ubah sesuai path ke file di server
+
+                // Membuat elemen <a> secara dinamis
+                var link = $("<a>")
+                    .attr("href", filePath)
+                    .attr("download", fileName);
+
+                // Menambahkan elemen <a> ke dalam DOM
+                $("body").append(link);
+
+                // Memicu klik pada elemen <a> untuk memulai unduhan
+                link[0].click();
+
+                // Menghapus elemen <a> dari DOM setelah selesai
+                link.remove();
+
             },
             error: function(jqXHR, textStatus, errorThrown) {
                 alert('Error get data from ajax');
@@ -304,6 +337,10 @@
                 if (data.status) {
                     $('#modal_form').modal('hide');
                     reload_table();
+
+                    param_id_parent = $('#parent_id').val();
+                    getDataFile(param_id_parent);
+
                     if (save_method == 'add') {
                         Toast.fire({
                             icon: 'success',
@@ -473,8 +510,6 @@
 
     }
 
-    6
-
     function printRows(arr) {
         $(".page-data").html('');
 
@@ -499,7 +534,7 @@
                 '<div><i class="' + param_icon + ' fa-2x mr-1" style="margin-left: 7px; color: #f00;"></i></div>' +
                 '<div class="d-flex col-lg-6 col-12 mb-4 mb-lg-0 ml-4">' +
                 '<div class="ms-3">' +
-                '<a href="#">' +
+                '<a href="javascript:void(0)" title="download" onclick="download_data(' + element.id + ')">' +
                 '<h5 class="mb-1 text-dark">' + element.nama + '.' + element.type_file + '</h5>' +
                 '</a>' +
                 '<p class="mb-0">Uploaded by ' + element.nama_created + '</p>' +

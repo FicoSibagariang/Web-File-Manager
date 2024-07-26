@@ -1,3 +1,9 @@
+<?php
+$session  = \Config\Services::session();
+$db = \Config\Database::connect();
+$id = $session->get('id_user');
+$data_user = $db->table('tbl_user')->where(['id_user' => $id])->get()->getRow();
+?>
 <div class="wrapper">
     <nav class="main-header navbar navbar-custom navbar-expand-lg navbar-light">
         <div class="container-fluid px-0 container-light" style="height: 40px;">
@@ -8,17 +14,17 @@
     <aside class="main-sidebar sidebar-tertiary elevation-1" style="position: fixed;">
 
         <a href="index3.html" class="brand-link">
-            <span class="brand-text ml-4 text-dark" style="font-weight: bold;">File Manager</span>
+            <span class="brand-text ml-4 text-dark" style="font-weight: bold; font-size: larger; text-align: center;">File Manager</span>
         </a>
 
         <div class="sidebar">
 
-            <div class="user-panel mt-2 pb-3 d-flex">
+            <div class="user-panel pb-3 d-flex" style="margin-top: 10px;">
                 <div class="image">
-                    <img src="<?= base_url() ?>img/fico.png" class="img-circle rounded-circle" alt="User Image" style="width: 50px; height:auto; align-items: center;">
+                    <img src="<?= base_url() ?>img/default1.jpg" class="img-circle rounded-circle" alt="User Image" style="width: 50px; height:auto; margin-left: 5px;">
                 </div>
                 <div class="info">
-                    <p style="margin-top:24px; margin-left:8px">Fico Sibagariang</p>
+                    <p style="margin-top:7px; margin-left:8px"><?= $session->get('full_name') ?></p>
                 </div>
             </div>
 

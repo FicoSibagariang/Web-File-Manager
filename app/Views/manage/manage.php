@@ -32,12 +32,6 @@
                     My Files
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link text-dark text-muted" aria-current="page" href="#!">
-                    <i class=" nav-icon fas fa-trash text-red"></i>
-                    Deleted Files
-                  </a>
-                </li>
                 <br><br><br><br><br><br><br><br><br><br>
               </ul>
 
@@ -47,22 +41,6 @@
       </div>
     </div>
     <div class="col-lg-9 ml-3">
-      <div class="row" style="margin-bottom: 10px; margin-left: 2px">
-        <form action="#">
-          <div class="input-group">
-            <span class="input-group-append" style="width: 200px; position:relative">
-              <input class="form-control rounded-3" type="search" value="" id="searchInput" placeholder="Search">
-              <button class="btn  ms-n10 rounded-0 rounded-end" type="button" style="position: absolute; right:0;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search text-dark">
-                  <circle cx="11" cy="11" r="8"></circle>
-                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
-              </button>
-            </span>
-          </div>
-        </form>
-      </div>
-
       <div class="mt-4 mb-6">
         <div class="mt-4 mb-6">
           <ul class="nav nav-tabs" id="custom-content-below-tab" role="tablist">
@@ -81,7 +59,7 @@
                   <div class="col-lg-4">
                     <div class="card">
                       <div class="card-body">
-                        <a href="/type">
+                        <a href="/word">
                           <div class="d-flex align-items-center">
                             <i class="nav-icon far fa-file-word text-red" style="font-size: 25px; margin-right: 10px;"></i>
                             <div class="ml-2">
@@ -96,7 +74,7 @@
                   <div class="col-lg-4">
                     <div class="card">
                       <div class="card-body">
-                        <a href="/type">
+                        <a href="/pdf">
                           <div class="d-flex align-items-center">
                             <i class="nav-icon far fa-file-pdf text-red" style="font-size: 25px; margin-right: 10px;"></i>
                             <div class="ml-2">
@@ -111,7 +89,7 @@
                   <div class="col-lg-4">
                     <div class="card">
                       <div class="card-body">
-                        <a href="/type">
+                        <a href="/powerpoint">
                           <div class="d-flex align-items-center">
                             <i class="nav-icon far fa-file-powerpoint text-red" style="font-size: 25px; margin-right: 10px;"></i>
                             <div class="ml-2">
@@ -126,7 +104,7 @@
                   <div class="col-lg-4">
                     <div class="card">
                       <div class="card-body">
-                        <a href="/type">
+                        <a href="/excel">
                           <div class="d-flex align-items-center">
                             <i class="nav-icon far fa-file-excel text-red" style="font-size: 25px; margin-right: 10px;"></i>
                             <div class="ml-2">
@@ -263,20 +241,17 @@
                 <div class="py-6">
                   <div class="row">
                     <div class="col-md-12 col-12">
-
                       <div class="page-data"></div>
-
                       <nav aria-label="Page navigation example">
                         <ul class="pagination">
                           <li onclick="prePage()" class="page-item page-list">
-                            <a class="page-link" href="#" aria-label="Previous">
+                            <a class="page-link text-danger" href="#" aria-label="Previous">
                               <span aria-hidden="true">Previous</span>
                               <span class="sr-only">Previous</span>
                             </a>
                           </li>
-
                           <li onclick="nextPage()" class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
+                            <a class="page-link text-danger" href="#" aria-label="Next">
                               <span aria-hidden="true">Next</span>
                               <span class="sr-only">Next</span>
                             </a>
