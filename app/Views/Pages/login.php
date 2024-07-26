@@ -17,7 +17,7 @@
                     <?php } ?>
                     <div class="form-group">
                         <label for="username"><i class="zmdi zmdi-account material-icons-name" style="color: #bb2124;"></i></label>
-                        <input type="text" name="username" value="<?php echo session()->getFlashdata('member_username') ?>" id="username" placeholder="Username" />
+                        <input type="text" name="username" autocomplete="off"  value="<?php echo session()->getFlashdata('member_username') ?>" id="username" placeholder="Username" />
                     </div>
                     <div class="form-group">
                         <label for="password"><i class="zmdi zmdi-lock" style="color: #bb2124;"></i></label>

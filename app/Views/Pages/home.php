@@ -20,10 +20,6 @@
                     <!-- project number -->
                     <div class="lh-1">
                         <h1 class="mb-1 text-danger" style="font-weight: bold;">18</h1>
-                        <p class="mb-0 text-danger">
-                            <span class="me-2 mr-2 text-danger">2</span>
-                            Completed
-                        </p>
                     </div>
                 </a>
             </div>
@@ -49,10 +45,6 @@
                     <!-- project number -->
                     <div class="lh-1">
                         <h1 class="mb-1 text-danger" style="font-weight: bold;">132</h1>
-                        <p class="mb-0 text-danger">
-                            <span class="text-danger me-2 mr-2">28</span>
-                            Completed
-                        </p>
                     </div>
                 </a>
             </div>
@@ -67,7 +59,7 @@
                     <!-- heading -->
                     <div class="d-flex justify-content-between align-items-center mb-3">
                         <div>
-                            <h4 class="mb-0 text-danger" style="font-size: 23px; font-weight:bold">Teams</h4>
+                            <h4 class="mb-0 text-danger" style="font-size: 23px; font-weight:bold">Team</h4>
                         </div>
                         <div class="icon-shape icon-md bg-danger-soft text-danger rounded-2">
                             <i class="fas fa-user fa-2x text-danger"></i>
@@ -75,11 +67,7 @@
                     </div>
                     <!-- project number -->
                     <div class="lh-1">
-                        <h1 class="mb-1 text-danger" style="font-weight: bold;">8</h1>
-                        <p class="mb-0 text-danger">
-                            <span class="text-danger me-2 mr-2">1</span>
-                            Completed
-                        </p>
+                        <h1 class="mb-1 text-danger" style="font-weight: bold;">8 <h4 class="text-danger" style="font-weight: bold;">Users</h4></h1>
                     </div>
                 </a>
             </div>

@@ -43,6 +43,7 @@ class Login extends BaseController
                         $userdata = array(
                             'id_user'     => $db->id_user,
                             'username'    => $db->username,
+                            'photo'       => $db->photo,
                             'full_name'   => ucfirst($db->nama),
                             'logged_in'   => TRUE,
                         );
