@@ -42,6 +42,7 @@ class FileManager extends BaseController
         $data['modal_data'] = show_my_modal('manage/modal_file', $data);
         $data['js'] = view('manage/manage-js', $data);
         return view('manage/manage', $data);
+        
     }
 
     public function ajax_list()
@@ -274,7 +275,15 @@ class FileManager extends BaseController
     public function type()
     {
         $data['judul'] = 'Word Files';
-        return view('/type', $data);
+        $data['js'] = view('manage/manage-js', $data);
+        return view('/manage/type', $data);
+    }
+
+    public function folder()
+    {
+        $data['judul'] = 'Folder';
+        $data['js'] = view('manage/manage-js', $data);
+        return view('/manage/folder', $data);
     }
     
 

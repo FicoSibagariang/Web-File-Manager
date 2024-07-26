@@ -34,13 +34,14 @@ $routes->post('/project/delete', 'Project::delete');
 // MANAGE FILE
 $routes->get('/manage', 'FileManager::index');
 $routes->get('/recent', 'FileManager::recent');
+$routes->get('/manage/type', 'FileManager::type');
+$routes->get('/manage/folder', 'FileManager::folder');
 $routes->post('/file_ajax_list', 'FileManager::ajax_list');
 $routes->post('/recent_ajax_list_recent_file', 'FileManager::ajax_list_recent_file');
 $routes->get('/manage/edit/(:any)', 'FileManager::edit/$1');
 $routes->post('/manage/save', 'FileManager::save');
 $routes->post('/manage/delete', 'FileManager::delete');
 $routes->post('/manage/get_data_file', 'FileManager::get_data_file');
-$routes->post('/manage/get_data_folder', 'FileManager::get_data_folder');
 $routes->post('/manage/get_data_folder', 'FileManager::get_data_folder');
 
 
