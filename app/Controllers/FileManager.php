@@ -325,4 +325,18 @@ class FileManager extends BaseController
             echo json_encode(['status' => FALSE]);
         }
     }
+
+    public function type()
+    {
+        $data['judul'] = 'Word Files';
+        $data['js'] = view('manage/manage-js', $data);
+        return view('/manage/type', $data);
+    }
+
+    public function folder()
+    {
+        $data['judul'] = 'Folder';
+        $data['js'] = view('manage/manage-js', $data);
+        return view('/manage/folder', $data);
+    }
 }

@@ -136,6 +136,7 @@
         $('.section_file').hide();
         param_id_parent = $('#parent_id').val();
         getDataFile(param_id_parent);
+        getDataFolder(param_id_parent);
 
     });
 
@@ -525,7 +526,7 @@
             } else if (element.type_file === 'pdf') {
                 param_icon = "far fa-file-pdf";
             } else if (element.type_file === 'png' || element.type_file === 'jpg' || element.type_file === 'jpeg') {
-                param_icon = "far fa-image";
+                param_icon = "far fa-file-image";
             }
 
             html = '<div class="card mb-3 mt-4">' +
@@ -548,6 +549,7 @@
             $(".page-data").append(html);
         });
     }
+
 
     function paginate(arr, size) {
         return arr.reduce((acc, val, i) => {
@@ -587,20 +589,17 @@
 
         arr.forEach(element => {
 
-            html = '<div class="card mb-3 mt-4">' +
+            html = '<div class="col-lg-4">' +
+                '<div class="card">' +
                 '<div class="card-body">' +
-                '<div class="row justify-content-between align-items-center">' +
-                '<div><i class="' + param_icon + ' fa-2x mr-1" style="margin-left: 7px; color: #f00;"></i></div>' +
-                '<div class="d-flex col-lg-6 col-12 mb-4 mb-lg-0 ml-4">' +
-                '<div class="ms-3">' +
-                '<a href="#">' +
-                '<h5 class="mb-1 text-dark">' + element.nama + '.' + element.type_file + '</h5>' +
+                '<a href="/manage/folder">' +
+                '<div class="d-flex align-items-center">' +
+                '<i class="nav-icon far fa-folder text-red" style="font-size: 25px; margin-right: 10px;"></i>' +
+                '<div class="ml-2">' +
+                '<span class="mb-0 text-dark" style="font-size: 20px;">' + element.nama + '</span>' +
+                '</div>' +
+                '</div>' +
                 '</a>' +
-                '<p class="mb-0">Uploaded by ' + element.nama_created + '</p>' +
-                '</div>' +
-                '</div>' +
-                '<div class="col"><span>' + element.size_file_kb + ' Kb</span></div>' +
-                '<div class="col"><span> ' + element.updated_at + '</span></div>' +
                 '</div>' +
                 '</div>' +
                 '</div>';

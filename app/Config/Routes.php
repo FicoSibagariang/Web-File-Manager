@@ -38,6 +38,8 @@ $routes->get('/pdf', 'FileManager::pdf');
 $routes->get('/powerpoint', 'FileManager::powerpoint');
 $routes->get('/excel', 'FileManager::excel');
 $routes->get('/recent', 'FileManager::recent');
+$routes->get('/manage/type', 'FileManager::type');
+$routes->get('/manage/folder', 'FileManager::folder');
 $routes->post('/file_ajax_list', 'FileManager::ajax_list');
 $routes->post('/ajax_list_recent_file', 'FileManager::ajax_list_recent_file');
 $routes->get('/manage/edit/(:any)', 'FileManager::edit/$1');
